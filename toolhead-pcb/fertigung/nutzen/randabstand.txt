@@ -1,4 +1,4 @@
-Randabstand nach Leitfaden (externes Prüfwerkzeug randabstand_pruefen.py, nicht im Repository; Grenze 3 mm), Exit 0
+Randabstand (werkzeuge/randabstand_pruefen.py, Grenze 3 mm), Exit 0
 DEUTUNG: Nutzen ≥ 70 mm in beiden Richtungen -> JLC setzt keine eigenen Ränder; der Rahmen des Nutzens ist der Fertigungsrand. Erfüllt ✓
 Platine 71.1 × 90.9 mm (Kontur inkl. Linienbreite)
 Beide Richtungen ≥ 70 mm – JLC braucht keine Ränder.

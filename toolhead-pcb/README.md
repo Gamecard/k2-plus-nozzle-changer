@@ -129,10 +129,6 @@ Vor der Bestellung unbedingt:
 - Lagerbestand aller knappen Teile prüfen; einige LCSC-Nummern sind nicht bestätigt (Liste am Ende von
   [`STUECKLISTE.md`](STUECKLISTE.md)).
 
-Hinweis zur Stückliste: In `fertigung/stueckliste.csv` steht in der Spalte „JLC-Bestückung“ bei einigen Teilen „nein (kein Bauteil
-/ selbst)“ (z. B. Q1–Q13, C2–C4), obwohl sie in der Bestückerliste `jlcpcb_bom.csv` enthalten sind. Für die Bestellung gilt
-`jlcpcb_bom.csv`.
-
 ## Inhalt dieses Ordners
 
 | Pfad | Inhalt |
@@ -174,14 +170,11 @@ Ausgaben landen in `ausgabe/`, Zwischenstände in `zwischen/` (beide nicht im Re
 bei jedem Lauf ausgelegt (`PYTHONHASHSEED=0`, fester Startwert für KiCads Element-Kennungen). Die mitgelieferte SES-Datei passt nur
 zur DSN genau dieses Stands; nach jeder Änderung am Generator ist ein neuer Routing-Lauf nötig.
 
-**Achtung, Reproduzierbarkeit:** Der veröffentlichte Stand wurde erzeugt, während im Projektordner eine KiCad-Sperrdatei
-`~kopfplatine-p19.kicad_pro.lck` lag (KiCad legt sie an, solange das Projekt geöffnet ist). Ob diese Datei vorhanden ist, ändert die
-Vorverlegung der Versorgungsleitungen. Geprüft am 22.11.2026 mit KiCad 10.0.8 in sauberen Kopien:
-
-| Lauf | Ergebnis `ausgabe/kopfplatine-p19.dsn` |
-|---|---|
-| mit Sperrdatei im Ordner | gleich `routing/f10a_a.dsn` bis auf die erste Zeile (Dateiname des Exports) – die SES passt |
-| ohne Sperrdatei (frischer Klon) | Platzierung gleich, Vorverlegung anders – die mitgelieferte SES passt **nicht**, neues Routing nötig |
+**Reproduzierbarkeit:** KiCad öffnet ein Projekt schreibgeschützt, sobald daneben eine Sperrdatei (`~….kicad_pro.lck`) liegt,
+und vergibt dann interne Kennungen in anderer Folge – das änderte früher die Vorverlegung. `bauen.sh` und der Generator legen
+deshalb während des Baus selbst eine neutrale Sperrdatei an und entfernen sie am Ende wieder. Geprüft am 22.11.2026 mit
+KiCad 10.0.8 in sauberen Kopien: mit und ohne vorhandene Sperrdatei entsteht dieselbe Router-Eingabe; sie ist bis auf die erste
+Zeile (Dateiname des Exports) gleich `routing/f10a_a.dsn`, die mitgelieferte SES passt also.
 
 Bekannte Einschränkungen beim Neubau:
 
@@ -189,8 +182,7 @@ Bekannte Einschränkungen beim Neubau:
   `python3 -I werkzeuge/drehung/easyeda_holen.py werkzeuge/drehung/roh/easyeda fertigung/jlcpcb_bom.csv`
   (Einzelheiten [`werkzeuge/drehung/LIESMICH.txt`](werkzeuge/drehung/LIESMICH.txt)).
 - Die zwei Prüfskripte für Randabstand (JLC-Regeln) und Pin-1-Liste liegen in `werkzeuge/` (`randabstand_pruefen.py`,
-  `pin1_liste.py`) und werden von `bauen.sh` und `generator/fertigung.py` von dort aufgerufen. Der Aufruf aus dem Repository
-  heraus ist nach dem Umzug der Pfade nicht erneut durchgerechnet.
+  `pin1_liste.py`); `./bauen.sh fertig routing/f10a_a.ses` lief damit in einer sauberen Kopie vollständig durch.
 - Der Fertig-Schritt ist nicht ganz bitgleich wiederholbar: Kleine Stücke der Nachverdrahtung können um Bruchteile eines
   Millimeters anders enden. Nach jedem Neubau DRC und Prüfberichte ansehen.
 
@@ -232,7 +224,5 @@ Durchkontaktierungen gesetzt.
   einstellen.
 - Die Klipper-Beispielkonfiguration in `klipper/` ist ein Entwurf vom 11.11.2026 (vor Fassung 10). Der Hinweis dort auf USB „über
   das Kopfkabel“ ist überholt – USB kommt in Fassung 10 über J44. Pins und Sektionen am Muster prüfen.
-- Das Schriftfeld in Schaltplan und Platine zeigt noch ältere Angaben („Entwurf 1 (nur Schaltplan)“, „Fassung 8“, „J2-Belegung
-  vorläufig“); maßgeblich ist Fassung 10, wie sie im Bestückungsdruck steht („P19 F10“).
 - Die ausführlichen Arbeitsnotizen zum Entwurf (Rechenwege, verworfene Varianten) sind nicht veröffentlicht. Kommentare im
   Generator verweisen teils darauf (z. B. „§12p“, „§F10-S1“).

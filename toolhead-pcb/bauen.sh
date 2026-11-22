@@ -22,6 +22,15 @@ DIR="$PWD"
 Z="$DIR/zwischen"
 A="$DIR/ausgabe"
 mkdir -p "$Z" "$A"
+# [F10-S4] Projekt während des ganzen Baus schreibgeschützt (KiCad-Sperrdatei; Begründung bei SPERRE in generator/kopfplatine.py).
+#   Ohne Sperre entstünde bei gleicher Platzierung eine andere Vorverlegung. Eigene (auch liegengebliebene) Sperre wird am Ende
+#   entfernt, eine fremde (geöffnetes KiCad) bleibt stehen – das Ergebnis ist in beiden Fällen gleich.
+SPERRE="$DIR/~$P.kicad_pro.lck"
+SPERRE_INHALT='{"hostname":"generator","username":"bauen.sh"}'
+if [[ ! -f "$SPERRE" || "$(cat "$SPERRE")" == "$SPERRE_INHALT" ]]; then
+  printf '%s' "$SPERRE_INHALT" > "$SPERRE"
+  trap 'rm -f "$SPERRE"' EXIT
+fi
 UMG="${K2_BAU_TMP:-$Z/umgebung}"
 mkdir -p "$UMG"/{kicad-config,kicad-cache,xdg-cache,home}
 export HOME="${HOME:-$UMG/home}"

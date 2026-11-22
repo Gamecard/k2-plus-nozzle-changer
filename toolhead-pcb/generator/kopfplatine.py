@@ -308,6 +308,8 @@ F8_GH_STECKER = [
 ]
 F9 = os.environ.get("K2_F9", "1") == "1"            # [F9-S1] Fassung 9: Einzelstecker Molex Pico-EZmate statt GH-Sammelstecker
 F10 = F9 and os.environ.get("K2_F10", "1") == "1"   # [F10-S1] Fassung 10: liegende JST GH nach Konzept K1, J2 entfällt
+if F10:   # [F10-S4] Schriftfeld Schaltplan/Platine: Stand und Datum der Fassung 10
+    STAND, DATUM, DATUM_DE, FERTIG_DATUM = "Fassung 10", "2026-11-21", "21.11.2026", "2026-11-21"
 # [F9-S1] Fassung 9 – jede Einheit ein eigener Molex Pico-EZmate (78171-000n „Vertical“, von oben gesteckt, Litzen seitlich
 #   parallel zur Platine). Netze wie Fassung 8; Pinfolge: Versorgung neben Masse, USB-Paar nebeneinander zwischen den
 #   Masse-/Versorgungsadern (Wächter). Tupel: (Ref, Polzahl, Belegung, Beschreibung, Kurzfunktion für den Druck, Gruppe,
@@ -1423,6 +1425,8 @@ GRUPPEN_TITEL = {
     "RGB": "10a Neopixel (74AHCT1G125, PTC 1,1 A) und Reserve-Endstop/Probe J18",
     "Messpunkte": "11 Messpads", "Mechanik": "Befestigung", "Flags": "ERC-Markierungen",
 }
+if F10:   # [F10-S4] J2 entfällt: die Gruppe enthält nur noch Schutz und Erkennung des USB-Eingangs J44
+    GRUPPEN_TITEL["Kopfkabel"] = "4 USB-Eingang J44 (ESD, Erkennung VBUS2 an PD2)"
 RECHTS_MAX = 1150.0
 
 
@@ -1497,18 +1501,31 @@ def erzeuge_schaltplan(T):
     for txt, (x, y) in titel:
         sp.text(txt, (x, y), size=2.54, bold=True)
     sp.text(f"{TITEL} – {STAND} – {DATUM_DE}", (25.4, 20.32), size=5.08, bold=True)
-    sp.text("ENTWURF – NUR SCHALTPLAN (Phase 1), KEIN LAYOUT – Vorgabe SCHALTUNG.md, Rechenwege SCHALTPLAN-NOTIZEN.md",
-            (25.4, 30.48), size=3.0, bold=True)
-    sp.text("Versorgung 24…48 V über J1 (Micro-Fit 2 x 2, + CAN). Kopfkabel J2: 24-V-Adern NICHT angeschlossen (nur Messpad, "
-            "0-Ω-Platz unbestückt). VBUS2 nie an V5. Lötbrücken: Werkzustand im Wert/Bemerkung.\n"
-            "J2-Belegung VORLÄUFIG (Kopfseite nicht gemessen). Verbindungen nur über gleichnamige globale Labels.",
-            (25.4, 38.1), size=1.8, just="left top")
+    if F10:   # [F10-S4] Kopftexte Fassung 10: Schaltplan zur gerouteten Platine, kein Kopfkabel J2
+        sp.text("FASSUNG 10 – Schaltplan zur Platine (6 Lagen, liegende JST GH) – Vorgabe SCHALTUNG.md, Rechenwege "
+                "SCHALTPLAN-NOTIZEN.md", (25.4, 30.48), size=3.0, bold=True)
+        sp.text("Versorgung 24…48 V + CAN über J1 (JST ZE 6-pol.). USB vom Host über J44 (VBUS2 nur Erkennung, nie an V5). "
+                "Kein Kopfkabel J2. Lötbrücken: Werkzustand im Wert/Bemerkung.\n"
+                "Verbindungen nur über gleichnamige globale Labels.",
+                (25.4, 38.1), size=1.8, just="left top")
+    else:
+        sp.text("ENTWURF – NUR SCHALTPLAN (Phase 1), KEIN LAYOUT – Vorgabe SCHALTUNG.md, Rechenwege SCHALTPLAN-NOTIZEN.md",
+                (25.4, 30.48), size=3.0, bold=True)
+        sp.text("Versorgung 24…48 V über J1 (Micro-Fit 2 x 2, + CAN). Kopfkabel J2: 24-V-Adern NICHT angeschlossen (nur Messpad, "
+                "0-Ω-Platz unbestückt). VBUS2 nie an V5. Lötbrücken: Werkzustand im Wert/Bemerkung.\n"
+                "J2-Belegung VORLÄUFIG (Kopfseite nicht gemessen). Verbindungen nur über gleichnamige globale Labels.",
+                (25.4, 38.1), size=1.8, just="left top")
     teile = [sym.raw for sym in syms.values()]
     sym_inst = [symbol_instanz(t, syms[t.lib]) for t in T]
-    tb = (f'(title_block (title {q(TITEL)}) (date {q(DATUM)}) (rev {q(STAND)}) '
-          f'(comment 1 "Phase 1: nur Schaltplan, kein Layout") '
-          f'(comment 2 "Vorgabe SCHALTUNG.md / KONZEPT.md, Rechenwege SCHALTPLAN-NOTIZEN.md") '
-          f'(comment 3 "J2-Belegung vorläufig – am Original-Kopf messen"))')
+    if F10:
+        tb = (f'(title_block (title {q(TITEL)}) (date {q(DATUM)}) (rev {q(STAND)}) '
+              f'(comment 1 "Fassung 10: 6 Lagen, 52 × 76,8 mm, liegende JST GH, USB-Eingang J44, ohne Kopfkabel J2") '
+              f'(comment 2 "Vorgabe SCHALTUNG.md / KONZEPT.md, Rechenwege SCHALTPLAN-NOTIZEN.md"))')
+    else:
+        tb = (f'(title_block (title {q(TITEL)}) (date {q(DATUM)}) (rev {q(STAND)}) '
+              f'(comment 1 "Phase 1: nur Schaltplan, kein Layout") '
+              f'(comment 2 "Vorgabe SCHALTUNG.md / KONZEPT.md, Rechenwege SCHALTPLAN-NOTIZEN.md") '
+              f'(comment 3 "J2-Belegung vorläufig – am Original-Kopf messen"))')
     inhalt = ["(kicad_sch (version 20250114) (generator \"eeschema\") (generator_version \"10.0\")",
               f"(uuid {q(ROOT_UUID)})", '(paper "A0")', tb,
               "(lib_symbols", *teile, ")", *sp.el, *sym_inst,
@@ -3568,7 +3585,8 @@ def platine(netzliste):
     tb = board.GetTitleBlock()
     tb.SetTitle(TITEL)
     tb.SetDate(DATUM)
-    tb.SetRevision("Phase 2 / Fassung 9 Entwurf (6 Lagen, 52 × 76,8 mm, Einzelstecker Pico-EZmate): ohne Routing" if F9 else
+    tb.SetRevision("Fassung 10 (6 Lagen, 52 × 76,8 mm, liegende JST GH, ohne J2): ohne Routing" if F10 else
+                   "Phase 2 / Fassung 9 Entwurf (6 Lagen, 52 × 76,8 mm, Einzelstecker Pico-EZmate): ohne Routing" if F9 else
                    "Phase 2 / Fassung 8 (6 Lagen, 52 × 76,8 mm, Steckerkonzept d): ohne Routing")
     tb.SetComment(0, "6 Lagen JLC06161H-7628: L1 Signal/Bauteile, L2 GND, L3+L4 Signal, L5 V3V3/V24/VIN/V5, L6 Signal/Bauteile")
     tb.SetComment(1, "KiCad-Oberseite = Welt-Rückseite (+Y); x = 26 − X, y = 74,5 − Z; oben ≤ 7,37 mm, unten flächig ≤ 1,5 mm")
@@ -9091,8 +9109,9 @@ def fertigstellen(ses):
         n_wieder += 1
     tb = board.GetTitleBlock()                       # [S15] Revisionstext des gerouteten Stands (steht in jeder Gerberdatei)
     tb.SetDate(FERTIG_DATUM)
-    tb.SetRevision(f"Fassung 8 (6 Lagen, 52 × 76,8 mm), geroutet ({Path(ses).name if ses and ses != '-' else 'ohne SES'}), "
-                   f"Fertigungsdaten S15")
+    _ses_name = Path(ses).name if ses and ses != '-' else 'ohne SES'
+    tb.SetRevision(f"Fassung 10 (6 Lagen, 52 × 76,8 mm, ohne J2), geroutet ({_ses_name})" if F10 else
+                   f"Fassung 8 (6 Lagen, 52 × 76,8 mm), geroutet ({_ses_name}), Fertigungsdaten S15")
     print(f"Vorverlegte Versorgung: {len(vor)} Elemente, davon {n_wieder} nach dem SES-Import wieder eingesetzt, "
           f"{len(doppelt)} doppelte entfernt")
     entfernt = []                                  # Referenzen halten (sonst gibt SWIG die Zone frei -> Absturz)
@@ -9881,11 +9900,34 @@ def lose_enden_entfernen(drc_json):
     print(f"Lose Bahnenden entfernt (ganz im Kupfer einer Bahn desselben Netzes): {len(weg)}" + (" – " + "; ".join(weg) if weg else ""))
 
 
+# [F10-S4] Projekt immer schreibgeschützt öffnen. KiCad öffnet ein Projekt, neben dem eine Sperrdatei
+#   „~<projekt>.kicad_pro.lck“ liegt, schreibgeschützt (gleich, wer sie angelegt hat). Dann gilt:
+#   (1) pcbnew.NewBoard und pcbnew.SaveBoard schreiben .kicad_pro/.kicad_prl NICHT neu – die Projektdatei stammt allein
+#       aus erzeuge_projekt() und projekt_netzklassen() (ohne Sperre ergänzt KiCad beim Speichern seine Vorgabewerte);
+#   (2) pcbnew.NewBoard zieht eine UUID weniger aus dem festen KIID-Startwert (8 statt 9). Ohne Sperre rücken dadurch alle
+#       Footprint-UUIDs um eine Stelle weiter, KiCad speichert die Footprints in anderer Reihenfolge, und die Vorverlegung
+#       trifft andere Gleichstands-Entscheidungen (andere DSN bei gleicher Platzierung und gleichen Regeln).
+#   Netzklassen, Design-Regeln und .kicad_dru wirken in beiden Fällen gleich. Festgeschrieben ist der Fall MIT Sperre
+#   (Stand der Fassung 10, DSN 9bed02ed…). bauen.sh hält die Sperre für den ganzen Bau; bei Einzelaufrufen legt main()
+#   sie an und entfernt sie danach wieder. Eine fremde Sperre (z. B. ein geöffnetes KiCad) bleibt unberührt.
+SPERRE = PROJ / f"~{PROJEKT}.kicad_pro.lck"
+SPERRE_INHALT = '{"hostname":"generator","username":"bauen.sh"}'
+
+
+def projekt_sperren():
+    if SPERRE.exists():
+        return
+    import atexit
+    SPERRE.write_text(SPERRE_INHALT, encoding="utf-8")
+    atexit.register(lambda: SPERRE.unlink(missing_ok=True))
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
         sys.exit(2)
     cmd = sys.argv[1]
+    projekt_sperren()
     # [12j] Reproduzierbarkeit: KiCad vergibt neuen Elementen zufällige UUIDs und sortiert Footprints beim Speichern danach
     #   -> die Pad-Reihenfolge (und damit jede Gleichstands-Entscheidung des Gitter-Routers) wechselte von Bau zu Bau.
     #   Fester Startwert je Befehl; dazu PYTHONHASHSEED=0 in bauen.sh.

@@ -1,4 +1,4 @@
-Randabstand nach Leitfaden (externes Prüfwerkzeug randabstand_pruefen.py, nicht im Repository; Grenze 3 mm), Exit 1
+Randabstand (werkzeuge/randabstand_pruefen.py, Grenze 3 mm), Exit 1
 DEUTUNG: Einzelplatine 52 × 76,8 mm. Bei Bestellung als Einzelplatine hängt JLC links und rechts Ränder an; dort stehen Stecker und Bauteile näher als 3 mm an der Kante (Liste unten). Das ist mit dieser Platzierung NICHT erfüllbar (Bauteillagen fest, DSN unverändert). Deshalb wird als eigener Nutzen bestellt („Panel by Customer“): ausgabe/nutzen/ – dort ist die Prüfung erfüllt (ausgabe/nutzen/randabstand.txt, ausgabe/nutzen/nutzen-pruefung.txt). Die Einzel-Gerber nicht ohne Nutzen bestellen.
 Platine 52.1 × 76.9 mm (Kontur inkl. Linienbreite)
 JLC-SMT setzt Ränder an: links, rechts (Richtung < 70 mm) – dort KEINE Stecker an die Kante!

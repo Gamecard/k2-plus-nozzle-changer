@@ -514,6 +514,7 @@ def stueckliste_csv(pfad):
     neu_kopf = kopf + ["JLC-Bestückung", "Ersatzteil (geprüft)"]
     neu = []
     korr = 0
+    import re
     for z in daten:
         refs = []
         for r in z[i_ref].split(","):
@@ -523,6 +524,13 @@ def stueckliste_csv(pfad):
                 korr += 1
             refs.append(r)
         z[i_ref] = ", ".join(refs)
+        # [F10-S4] KiCad fasst fortlaufende Referenzen zu Bereichen zusammen („Q1-Q8“, „C_D2-C_D4“) -> für die Einstufung
+        #   einzeln auflösen (sonst fand sich der Bereich nicht in den Bauteilen und galt als „kein Bauteil“)
+        einzeln = []
+        for r in refs:
+            m = re.fullmatch(r"([A-Za-z_]+)(\d+)-\1(\d+)", r)
+            einzeln += [f"{m.group(1)}{n}" for n in range(int(m.group(2)), int(m.group(3)) + 1)] if m else [r]
+        refs = einzeln
         ts = [T[r] for r in refs if r in T]
         if any(r in k.JLC_NICHT_BESTUECKT for r in refs):
             jlc = "nein – " + "; ".join(k.JLC_NICHT_BESTUECKT[r] for r in refs if r in k.JLC_NICHT_BESTUECKT)
