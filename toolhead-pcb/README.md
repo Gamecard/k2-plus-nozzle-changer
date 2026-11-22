@@ -194,7 +194,8 @@ Bekannte Einschränkungen beim Neubau:
 - Der Fertig-Schritt ist nicht ganz bitgleich wiederholbar: Kleine Stücke der Nachverdrahtung können um Bruchteile eines
   Millimeters anders enden. Nach jedem Neubau DRC und Prüfberichte ansehen.
 
-Weitere Hilfswerkzeuge in `werkzeuge/`: `zdiff_l3.py` (Impedanz der USB-Paare, 2D-Feldrechnung), `uebersicht.py`
+Weitere Hilfswerkzeuge in `werkzeuge/`: `bestueckungsbild.py` (farbige Bestückungsübersicht beider Seiten, erzeugt
+`doku/bilder/bestueckung_*.png`), `zdiff_l3.py` (Impedanz der USB-Paare, 2D-Feldrechnung), `uebersicht.py`
 (Platzierung nach Funktionsblöcken einfärben), `bild2.py` und `liste.py` (Ausschnittbilder und Listen von Pads/Bahnen),
 `easyeda_import.py` (Footprint-Geometrie aus Bibliotheksdaten ableiten; schreibt nur die abgeleiteten Maße nach
 `generator/fremd_footprints.json`), `vorverlegung_nur.sh` (nur Vorverlegung und Prüfungen auf vorhandener Platzierung).
