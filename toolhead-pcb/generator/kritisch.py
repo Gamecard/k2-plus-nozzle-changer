@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[12o] Prüfung „kritische Netze“: Wandler-Schaltknoten, Rückführungen, Analogversorgung, Quarze, Stützkondensatoren,
 USB-Paare.  Je Netz: Weglänge vom Bezugspin zu jedem Pflicht-Pad, Durchkontaktierungen auf dem Weg, kleinste Breite,
 Abstand zu Störnetzen – gegen Grenzwerte.

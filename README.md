@@ -5,7 +5,8 @@ own cartridge with its own hotend and its own filament path; the print head park
 and picks up another, so filament never has to be unloaded, cut or purged. Included are the mechanical design description
 (prototype 19 v2) and a complete, generator-built KiCad design of a new toolhead board (P19, revision 10) with Gerber,
 BOM and pick-and-place files. Status: designed and checked by calculation and simulation; not yet built or tested on a
-printer. Not affiliated with Creality. Licence: CERN-OHL-W v2 (see `LICENSE`).
+printer. Not affiliated with Creality. Licences: hardware design CERN-OHL-W v2 (`LICENSE`), program code
+GPL-3.0-or-later (`LICENSE-GPL-3.0.txt`).
 
 Stand: konstruiert und rechnerisch geprüft, noch nicht gebaut und nicht am Drucker erprobt. Lizenz und Haftung:
 [`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md).
@@ -50,7 +51,8 @@ Die nächste Patrone soll schon in der Ablage vorgeheizt werden. Gerechnet ergib
 | [`prototyp-19v2/`](prototyp-19v2/) | Beschreibung der Mechanik (Prototyp 19 v2): Aufbau, Wechselablauf, Baugruppen, Kaufteile, offene Punkte; Bilder |
 | [`prototyp-19v2/cad/`](prototyp-19v2/cad/) | CAD-Daten: SolidCraft-Modell, STEP der Baugruppe, STL der Druckteile (ohne fremde Bezugsmodelle, siehe dort) |
 | [`toolhead-pcb/`](toolhead-pcb/) | Eigene Kopfplatine „P19, Fassung 10“: KiCad-Projekt, Python-Generator, Fertigungsdaten für JLCPCB, Schaltungsbeschreibung, Kabelliste, Prüfberichte, Klipper-Beispielkonfiguration |
-| [`LICENSE`](LICENSE) | Lizenztext CERN-OHL-W v2 |
+| [`LICENSE`](LICENSE) | Lizenztext CERN-OHL-W v2 (Hardware-Entwurf) |
+| [`LICENSE-GPL-3.0.txt`](LICENSE-GPL-3.0.txt) | Lizenztext GNU GPL Version 3 (Programmcode) |
 | [`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md) | Lizenzhinweis, Kurzfassung, Ausnahmen, Haftungsausschluss |
 
 ## Die Kopfplatine in einem Satz
@@ -94,8 +96,9 @@ Kabel vom Drucker zum Kopf** nötig (Versorgung + CAN und USB).
 
 ## Lizenz und Haftung
 
-Der Entwurf steht unter der **CERN Open Hardware Licence Version 2 – Weakly Reciprocal (CERN-OHL-W v2)**. Den vollständigen
-Lizenztext enthält [`LICENSE`](LICENSE); Kurzfassung, Ausnahmen (KiCad-Bibliotheken, Herstellerdaten, fremde Modelle) und den
+Der Hardware-Entwurf steht unter der **CERN Open Hardware Licence Version 2 – Weakly Reciprocal (CERN-OHL-W v2)**, der
+Programmcode (Generator, Werkzeuge, Bauskript, Klipper-Beispiel) unter der **GNU General Public License Version 3 oder
+später**. Die vollständigen Lizenztexte enthalten [`LICENSE`](LICENSE) und [`LICENSE-GPL-3.0.txt`](LICENSE-GPL-3.0.txt); Kurzfassung, Ausnahmen (KiCad-Bibliotheken, Herstellerdaten, fremde Modelle) und den
 Haftungsausschluss enthält [`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md). Nutzung auf eigene Gefahr: Die Platine arbeitet mit
 bis zu 48 V, Motor- und Heizlasten.
 

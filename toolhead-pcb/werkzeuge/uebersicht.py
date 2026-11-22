@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[12l] Übersicht der Platzierung nach Funktionsblöcken (Courtyards, eingefärbt nach Gruppe), oben und unten.
 Aufruf: werkzeuge/uebersicht.py <platine.kicad_pcb> <ausgabe-ordner>   (Ansicht jeweils von oben auf L1, Unterseite durchscheinend)"""
 import sys

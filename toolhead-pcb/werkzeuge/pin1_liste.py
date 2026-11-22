@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Pin-1-/Polungs-Sollliste für die Prüfung im JLC PCBA Viewer (DFM Analysis).
 
 Gibt für jedes gepolte bzw. richtungsabhängige Bauteil (U, D, Q, J, T, Y, LED …)

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 import sys, pcbnew
 b=pcbnew.LoadBoard(sys.argv[1]); x0,y0,x1,y1=map(float,sys.argv[2:6]); nets=sys.argv[6].split(",") if len(sys.argv)>6 and sys.argv[6] else None
 O=(50,40)

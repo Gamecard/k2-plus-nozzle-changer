@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[12p] Differenzielle Impedanz eines kantengekoppelten Paars auf L3 (JLC06161H-7628): quasi-statisch, 2D-Laplace
 (finite Differenzen), homogenes Dielektrikum (Kern 0,4 mm über dem Paar, Prepreg 7628 darunter; εr gemittelt 4,5).
 Bezug oben: GND-Lage L2 (0,4 mm). Unten zwei Fälle: (A) nächste Kupferfläche erst L5 (0,2028 + 0,0152 + 0,4 mm),

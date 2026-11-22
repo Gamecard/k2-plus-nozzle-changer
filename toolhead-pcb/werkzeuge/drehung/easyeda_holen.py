@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[S15] EasyEDA/LCSC-Bibliotheksdaten je C-Nummer holen (nur die C-Nummer wird gesendet, ohne Anmeldung).
 Aufruf: python3 -I easyeda_holen.py <rohordner> <bom.csv> [<bom2.csv> ...]
 Schreibt <rohordner>/<C-Nr>.json (vorhandene Dateien werden nicht erneut geholt)."""

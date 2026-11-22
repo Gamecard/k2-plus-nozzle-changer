@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-or-later
 # =============================================================================
 #  Kopfplatine P19 – Phase 1: Generator -> ERC -> Netzliste -> Netzlisten-Wächter -> Stückliste
 #  Phase 2: Leiterplatte platzieren (ohne Routing) -> Prüfer -> Randabstand -> Bilder, DSN für Freerouting

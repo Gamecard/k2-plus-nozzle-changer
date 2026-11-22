@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[S15] Drehzuschläge JLC je Bauteil aus den LCSC/EasyEDA-Bibliotheksdaten bestimmen und nachweisen.
 
 Aufruf (KiCad-Python, Systempython):

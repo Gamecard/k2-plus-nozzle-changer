@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[12q] High-Speed-USB-Paare fest als Paar verlegen (direkt nach den kritischen Netzen, vor allem anderen Signalkupfer).
 
 Verfahren: Der Gitter-Router sucht auf L3 (In2, Bezug GND-Lage L2) EINE breite Mittellinie (2 × Bahn + Lücke) zwischen zwei

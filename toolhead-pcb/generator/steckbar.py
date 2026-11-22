@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[F10-S1] Steckbarkeitsprüfung liegender JST-GH-Stecker auf der Kopfplatine P19 (aus der Studie GH-Konzept
 varianten/studie_gh_konzept/werkzeuge/gh_pruef.py übernommen, ohne scipy, ohne Dateizugriff; Aufruf aus kopfplatine.py).
 

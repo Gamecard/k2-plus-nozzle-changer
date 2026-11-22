@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
 import sys, pcbnew
 from PIL import Image, ImageDraw
 b = pcbnew.LoadBoard(sys.argv[1]); x0,y0,x1,y1 = map(float, sys.argv[2:6]); out=sys.argv[6]; hl=sys.argv[7].split(",") if len(sys.argv)>7 else []

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[S15] Nachweis: je bestücktem Teil Pin-1-Lage laut Platine gegen Pin-1-Lage laut CPL (Mitte + Drehung) + JLC-Bibliothek.
 Aufruf (KiCad-Python): python3 drehung_nachweis.py <platine.kicad_pcb> <jlcpcb_cpl.csv> <jlcpcb_bom.csv> <rohordner> <aus.txt>
 Die CPL-Zeile wird wie von JLC gelesen (Modell A: Oberseite gegen den Uhrzeigersinn von oben, Unterseite von unten

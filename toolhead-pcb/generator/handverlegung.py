@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[Fassung 7, 12i] Handverlegung: feste Nachverdrahtung als Koordinatenliste je Netz.
 
 Das Nachverdrahten (kopfplatine.py nachverdrahten: Ripup + verhandeltes Neuverlegen) braucht für die letzten offenen

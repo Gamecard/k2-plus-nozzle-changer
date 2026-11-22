@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[F9-S1] Prüfung „Litzenweg“ (Vorgabe 21.11.2026, ersetzt F(2)/F(3)).
 
 Vereinfachtes, nachvollziehbares Modell (alles in Platinenkoordinaten, y nach unten, Oberseite):

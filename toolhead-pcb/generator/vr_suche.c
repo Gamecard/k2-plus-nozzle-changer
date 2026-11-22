@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
 /* [Fassung 7, 12i] Kern des Gitter-Routers (A*, 8 Richtungen, Lagenwechsel über Vias) für kopfplatine.py.
    Gleiche Kosten wie die Python-Fassung _vr_weg: gerade 1, diagonal 1,4142, Via via_k (3 mm in Rasterzellen); dazu je Zelle die Zusatzkosten
    kosten[] (Ripup-Strafe bzw. Stau-Kosten der Verhandlung) und je Via-Platz kosten_via[]. Zielzellen sind immer betretbar. Übersetzt vom Generator selbst (gcc -O2 -shared -fPIC). */

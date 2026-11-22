@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """Bestückungsübersicht als gut lesbares Bild: farbige Bauteilflächen nach Art, Bezeichnung im Bauteil,
 Stecker mit Funktion, Pin 1 als Punkt. Die Unterseite wird gespiegelt gezeichnet (Blick von unten).
 

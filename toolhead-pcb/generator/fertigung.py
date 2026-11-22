@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[S15] Kopfplatine P19 – Fertigungsschritte nach dem Routing (Teil des Generators, aufgerufen über kopfplatine.py):
 
   stege-sperren [A]          -> kupferfreie Zonen an allen Stegstellen des Nutzens (Regelflächen, alle Kupferlagen)

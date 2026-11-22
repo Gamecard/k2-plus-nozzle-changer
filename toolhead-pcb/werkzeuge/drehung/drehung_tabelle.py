@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: GPL-3.0-or-later
 """[S15] Aus der Auswertung von drehung_pruefen.py (Modell A, an CM5-Erfahrung geeicht) die Generator-Tabellen bilden.
 Aufruf: python3 -I drehung_tabelle.py <auswertung.json> <tabelle.txt> [<cm5_bom.csv> <cm5_cpl.csv> <k2_traeger.py>]
 Optional zweiter Beleg: gleiche C-Nummer + gleicher KiCad-Footprint + gleiche Seite beim CM5-Träger, dort in der JLC-Vorschau

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: GPL-3.0-or-later
 # [F10-S2] Nur Vorverlegung + Prüfungen auf der vorhandenen Platzierung (Schritte 6b ff. aus bauen.sh, ohne DSN) – zum Probieren.
 set -uo pipefail
 cd "$(dirname "$(readlink -f "$0")")/.."
