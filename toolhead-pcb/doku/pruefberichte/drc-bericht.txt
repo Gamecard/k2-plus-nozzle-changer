@@ -1,0 +1,28 @@
+** Drc report for kopfplatine-p19.kicad_pcb **
+** Created on 2026-11-22T09:43:53 **
+** Report includes: Errors, Warnings, Exclusions **
+
+** Found 2 DRC violations **
+[silk_edge_clearance]: Bestückungsdruck durch Platinenkante abgeschnitten (Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck Freiraum 0,1500 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(51.0000 mm, 40.0000 mm): Abschnitt auf Edge.Cuts
+    @(53.6000 mm, 41.2500 mm): Abschnitt von J16 auf F.Silkscreen
+[silk_edge_clearance]: Bestückungsdruck durch Platinenkante abgeschnitten (Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck Freiraum 0,1500 mm; tatsächlich 0,0000 mm)
+    Rule: Einschränkungen aus Platinenkonfiguration zum Bestückungsdruck; warning
+    @(51.0000 mm, 40.0000 mm): Abschnitt auf Edge.Cuts
+    @(63.0000 mm, 41.2500 mm): Abschnitt von J16 auf F.Silkscreen
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - PTH inside courtyard
+    - NPTH inside courtyard
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

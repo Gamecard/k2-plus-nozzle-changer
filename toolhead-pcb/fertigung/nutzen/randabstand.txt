@@ -1,0 +1,23 @@
+Randabstand nach Leitfaden (externes Prüfwerkzeug randabstand_pruefen.py, nicht im Repository; Grenze 3 mm), Exit 0
+DEUTUNG: Nutzen ≥ 70 mm in beiden Richtungen -> JLC setzt keine eigenen Ränder; der Rahmen des Nutzens ist der Fertigungsrand. Erfüllt ✓
+Platine 71.1 × 90.9 mm (Kontur inkl. Linienbreite)
+Beide Richtungen ≥ 70 mm – JLC braucht keine Ränder.
+
+Kante links:
+  FID1     Fiducial_1mm_Mask2mm         Seite oben  Abstand 2.60 mm
+  FID2     Fiducial_1mm_Mask2mm         Seite oben  Abstand 2.60 mm
+  WL1      Werkzeugloch                 Seite oben  Abstand 2.90 mm
+  WL3      Werkzeugloch                 Seite oben  Abstand 2.90 mm
+
+Kante rechts:
+  FID3     Fiducial_1mm_Mask2mm         Seite oben  Abstand 2.61 mm
+  WL2      Werkzeugloch                 Seite oben  Abstand 2.90 mm
+
+Kante oben:
+  WL1      Werkzeugloch                 Seite oben  Abstand 2.90 mm
+  WL2      Werkzeugloch                 Seite oben  Abstand 2.90 mm
+
+Kante unten:
+  WL3      Werkzeugloch                 Seite oben  Abstand 2.90 mm
+
+Kein Bauteil zu nah an einer Rand-Kante. ✓

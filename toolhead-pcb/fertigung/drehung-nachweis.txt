@@ -1,0 +1,28 @@
+Drehungs-Nachweis jlcpcb_cpl.csv gegen kopfplatine-p19.kicad_pcb (Modell A, an CM5-Vorschau geeicht)
+Teile in der CPL: 230; mit Bibliotheksdaten geprüft: 20; ohne Bibliotheksdaten: 210; Fehler: 0 []
+Koordinaten: Platine mm ab linker oberer Ecke. Ursprungsversatz = Abstand KiCad-Mitte ↔ Ursprung des JLC-Bauteils (JLC richtet den Sitz in der Vorschau aus; > 0,3 mm in der Vorschau ansehen).
+
+C22      oben  C19702     CPL     0°  Pin 1: Platine ( 23.70/ 55.17) CPL+Bibl. ( 23.77/ 55.17) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt)
+C23      unten C19702     CPL   180°  Pin 1: Platine ( 17.97/ 14.00) CPL+Bibl. ( 17.90/ 14.00) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt, 180° gleichwertig)
+C30      unten C19702     CPL    90°  Pin 1: Platine ( 33.33/ 58.27) CPL+Bibl. ( 33.33/ 58.20) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt)
+C31      unten C19702     CPL    90°  Pin 1: Platine ( 33.16/ 62.94) CPL+Bibl. ( 33.16/ 62.86) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt)
+C33      unten C19702     CPL     0°  Pin 1: Platine ( 34.47/ 37.38) CPL+Bibl. ( 34.55/ 37.38) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt, 180° gleichwertig)
+C43      unten C19702     CPL     0°  Pin 1: Platine ( 11.51/ 42.75) CPL+Bibl. ( 11.59/ 42.75) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt, 180° gleichwertig)
+C54      unten C19702     CPL     0°  Pin 1: Platine ( 14.12/ 16.20) CPL+Bibl. ( 14.20/ 16.20) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt, 180° gleichwertig)
+C61      unten C19702     CPL     0°  Pin 1: Platine ( 35.72/ 56.50) CPL+Bibl. ( 35.80/ 56.50) Abstand 0.07 mm; 2 Pads Rest 0.07 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt, 180° gleichwertig)
+D1       oben  C163658    CPL     0°  Pin 1: Platine ( 25.35/ 24.00) CPL+Bibl. ( 25.14/ 24.00) Abstand 0.21 mm; 2 Pads Rest 0.21 mm, Ursprungsversatz 0.00 mm ✓
+D_CAN    unten C14486     CPL    90°  Pin 1: Platine ( 38.16/ 16.47) CPL+Bibl. ( 38.10/ 16.47) Abstand 0.06 mm; 3 Pads Rest 0.06 mm, Ursprungsversatz 0.02 mm ✓
+J16      oben  C165948    CPL   180°  Pin A5: Platine (  9.55/  7.30) CPL+Bibl. (  9.55/  7.30) Abstand 0.00 mm; 8 Pads Rest 0.00 mm, Ursprungsversatz 0.00 mm ✓
+L1       oben  C7602869   CPL    90°  Pin 1: Platine ( 46.00/ 39.00) CPL+Bibl. ( 46.00/ 39.00) Abstand 0.00 mm; 2 Pads Rest 0.00 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt)
+L2       oben  C167220    CPL   180°  Pin 1: Platine ( 38.00/ 31.50) CPL+Bibl. ( 38.00/ 31.50) Abstand 0.00 mm; 2 Pads Rest 0.00 mm, Ursprungsversatz 0.00 mm ✓ (ungepolt)
+SW1      oben  C139797    CPL    90°  ohne gemeinsame Padnummern – Padgeometrie deckt sich ✓ (Rest 0.00 mm, Ursprungsversatz 0.00 mm; Padnummern weichen ab, Teil symmetrisch)
+SW2      oben  C139797    CPL     0°  ohne gemeinsame Padnummern – Padgeometrie deckt sich ✓ (Rest 0.00 mm, Ursprungsversatz 0.00 mm; Padnummern weichen ab, Teil symmetrisch)
+U11      unten C11355     CPL   270°  Pin 1: Platine ( 26.60/ 32.25) CPL+Bibl. ( 26.61/ 32.25) Abstand 0.01 mm; 10 Pads Rest 0.01 mm, Ursprungsversatz 0.00 mm ✓
+U13      unten C130035    CPL     0°  Pin 1: Platine ( 36.76/ 50.45) CPL+Bibl. ( 36.60/ 50.45) Abstand 0.16 mm; 5 Pads Rest 0.16 mm, Ursprungsversatz 0.03 mm ✓
+U3       oben  C5383002   CPL   270°  Pin 1: Platine ( 40.86/ 27.05) CPL+Bibl. ( 40.85/ 27.05) Abstand 0.01 mm; 6 Pads Rest 0.01 mm, Ursprungsversatz 0.00 mm ✓
+U5       oben  C5373042   CPL     0°  Pin 1: Platine (  5.75/ 31.95) CPL+Bibl. (  5.75/ 31.95) Abstand 0.00 mm; 17 Pads Rest 0.00 mm, Ursprungsversatz 0.00 mm ✓
+U9       unten C189624    CPL   180°  Pin 1: Platine ( 27.25/ 49.12) CPL+Bibl. ( 27.25/ 49.12) Abstand 0.00 mm; 12 Pads Rest 0.00 mm, Ursprungsversatz 0.00 mm ✓
+
+Ohne Bibliotheksdaten, Drehung NICHT belegt -> in der JLC-Vorschau prüfen: D10, D12, D13, D15, D16, D17, D18, D19, D2, D20, D3, D4, D5, D8, D9, D_C1, D_C2, J1, J3, J30, J31, J32, J33, J34, J35, J36, J37, J39, J40, J41, J42, J43, J44, Q1, Q10, Q11, Q12, Q13, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, U1, U10, U12, U2, U4, U7, U8, Y1, Y2
+Ohne Bibliotheksdaten, Drehung über die JLC-Vorschau des CM5-Trägers belegt (gleiche C-Nummer/Footprint/Seite, zwischen/s15/drehung_tabelle.txt): D11, D14, D6, D7
+ungepolt (0°/180° gleichwertig; Zuschlag 0 wie alle belegten Zweipole): C1, C10, C11, C12, C13, C14, C15, C16, C17, C18, C19, C2, C20, C21, C24, C25, C26, C3, C32, C34, C35, C36, C37, C38, C39, C4, C40, C41, C42, C44, C45, C46, C47, C48, C49, C5, C50, C51, C52, C53, C55, C56, C57, C58, C59, C6, C60, C62, C63, C64, C65, C66, C67, C7, C8, C9, C_D2, C_D3, C_D4, C_LED, C_V24C, C_V24D, F1, F2, F3, FB1, FB2, F_LED, R1, R10, R11, R12, R13, R14, R15, R16, R17, R18, R19, R2, R20, R23, R24, R25, R26, R27, R28, R29, R3, R30, R31, R32, R33, R34, R35, R36, R37, R38, R39, R4, R40, R41, R42, R43, R44, R45, R46, R47, R48, R49, R5, R50, R51, R52, R53, R54, R55, R56, R57, R58, R59, R6, R60, R61, R62, R63, R64, R65, R66, R67, R68, R69, R7, R70, R71, R72, R73, R74, R75, R76, R77, R78, R79, R8, R80, R81, R82, R83, R9, R_D, TH1

@@ -1,0 +1,989 @@
+{
+ "WCH_CH334P_QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm": {
+  "lcsc": "C5373042",
+  "hoehe": 0.75,
+  "bemerkung": "WCH CH334P, QFN-16 3 x 3 mm, Pad 17 = GND-Fläche",
+  "pads": [
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": -0.75,
+    "y": 1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": -0.25,
+    "y": 1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "3",
+    "form": "rect",
+    "x": 0.25,
+    "y": 1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "4",
+    "form": "rect",
+    "x": 0.75,
+    "y": 1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "5",
+    "form": "rect",
+    "x": 1.4501,
+    "y": 0.75,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "6",
+    "form": "rect",
+    "x": 1.4501,
+    "y": 0.25,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "7",
+    "form": "rect",
+    "x": 1.4501,
+    "y": -0.25,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "8",
+    "form": "rect",
+    "x": 1.4501,
+    "y": -0.75,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "9",
+    "form": "rect",
+    "x": 0.75,
+    "y": -1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "10",
+    "form": "rect",
+    "x": 0.25,
+    "y": -1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "11",
+    "form": "rect",
+    "x": -0.25,
+    "y": -1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "12",
+    "form": "rect",
+    "x": -0.75,
+    "y": -1.4501,
+    "sx": 0.28,
+    "sy": 0.665,
+    "tht": false
+   },
+   {
+    "nummer": "13",
+    "form": "rect",
+    "x": -1.4501,
+    "y": -0.75,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "14",
+    "form": "rect",
+    "x": -1.4501,
+    "y": -0.25,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "15",
+    "form": "rect",
+    "x": -1.4501,
+    "y": 0.25,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "16",
+    "form": "rect",
+    "x": -1.4501,
+    "y": 0.75,
+    "sx": 0.665,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "17",
+    "form": "rect",
+    "x": 0.0,
+    "y": 0.0,
+    "sx": 1.7,
+    "sy": 1.7,
+    "tht": false
+   }
+  ],
+  "loecher": [],
+  "umriss": {
+   "x": 0.0,
+   "y": 0.0,
+   "b": 3.02,
+   "t": 3.02,
+   "dreh": "0,0,90"
+  }
+ },
+ "ST_LIS2DW12_LGA-12_2x2mm_P0.5mm": {
+  "lcsc": "C189624",
+  "hoehe": 0.7,
+  "bemerkung": "ST LIS2DW12TR, LGA-12 2 x 2 x 0,7 mm",
+  "pads": [
+   {
+    "nummer": "12",
+    "form": "rect",
+    "x": -0.875,
+    "y": 0.2499,
+    "sx": 0.5,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "11",
+    "form": "rect",
+    "x": -0.875,
+    "y": -0.2499,
+    "sx": 0.5,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "10",
+    "form": "rect",
+    "x": -0.7501,
+    "y": -0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "9",
+    "form": "rect",
+    "x": -0.2499,
+    "y": -0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "8",
+    "form": "rect",
+    "x": 0.2499,
+    "y": -0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "7",
+    "form": "rect",
+    "x": 0.7501,
+    "y": -0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "6",
+    "form": "rect",
+    "x": 0.8749,
+    "y": -0.2499,
+    "sx": 0.5,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "5",
+    "form": "rect",
+    "x": 0.8749,
+    "y": 0.2499,
+    "sx": 0.5,
+    "sy": 0.28,
+    "tht": false
+   },
+   {
+    "nummer": "4",
+    "form": "rect",
+    "x": 0.7501,
+    "y": 0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "3",
+    "form": "rect",
+    "x": 0.2499,
+    "y": 0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": -0.2499,
+    "y": 0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   },
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": -0.7501,
+    "y": 0.875,
+    "sx": 0.28,
+    "sy": 0.5,
+    "tht": false
+   }
+  ],
+  "loecher": [],
+  "umriss": {
+   "x": 0.0,
+   "y": -0.0,
+   "b": 2.0,
+   "t": 2.0,
+   "dreh": "0,0,90"
+  }
+ },
+ "L_Sunlord_SMS0850": {
+  "lcsc": "C7602869",
+  "hoehe": 5.0,
+  "bemerkung": "Speicherdrossel SMS0850-330MT, 8,5 x 8,0 x 5,0 mm",
+  "pads": [
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": 3.4999,
+    "y": 0.0,
+    "sx": 2.5,
+    "sy": 3.5,
+    "tht": false
+   },
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": -3.5001,
+    "y": 0.0,
+    "sx": 2.5,
+    "sy": 3.5,
+    "tht": false
+   }
+  ],
+  "loecher": [],
+  "umriss": {
+   "x": -0.0001,
+   "y": 0.0,
+   "b": 8.5,
+   "t": 8.01,
+   "dreh": "0,0,0"
+  }
+ },
+ "L_Changjiang_FXL0630": {
+  "lcsc": "C167220",
+  "hoehe": 3.0,
+  "bemerkung": "Speicherdrossel FXL0630-4R7-M, 7 x 6,6 x 3,0 mm",
+  "pads": [
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": -2.9999,
+    "y": 0.0,
+    "sx": 2.4,
+    "sy": 3.2,
+    "tht": false
+   },
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": 3.0001,
+    "y": 0.0,
+    "sx": 2.4,
+    "sy": 3.2,
+    "tht": false
+   }
+  ],
+  "loecher": [],
+  "umriss": {
+   "x": 0.0,
+   "y": 0.0,
+   "b": 7.0,
+   "t": 6.601,
+   "dreh": "0,0,0"
+  }
+ },
+ "USB_C_Buchse_stehend_HRO_TYPE-C-31-M-06": {
+  "lcsc": "C129019",
+  "hoehe": 0.0,
+  "bemerkung": "HRO TYPE-C-31-M-06, USB-C stehend SMD (Höhe siehe Generator/Datenblatt)",
+  "pads": [
+   {
+    "nummer": "A1",
+    "form": "rect",
+    "x": -2.7511,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A2",
+    "form": "rect",
+    "x": -2.2509,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A3",
+    "form": "rect",
+    "x": -1.7511,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A4",
+    "form": "rect",
+    "x": -1.251,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A5",
+    "form": "rect",
+    "x": -0.7511,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A6",
+    "form": "rect",
+    "x": -0.251,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A7",
+    "form": "rect",
+    "x": 0.2489,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A8",
+    "form": "rect",
+    "x": 0.749,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A9",
+    "form": "rect",
+    "x": 1.2489,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A10",
+    "form": "rect",
+    "x": 1.749,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A11",
+    "form": "rect",
+    "x": 2.2489,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "A12",
+    "form": "rect",
+    "x": 2.749,
+    "y": -0.7501,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B1",
+    "form": "rect",
+    "x": 2.7511,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B2",
+    "form": "rect",
+    "x": 2.2509,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B3",
+    "form": "rect",
+    "x": 1.7511,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B4",
+    "form": "rect",
+    "x": 1.251,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B5",
+    "form": "rect",
+    "x": 0.7511,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B6",
+    "form": "rect",
+    "x": 0.251,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B7",
+    "form": "rect",
+    "x": -0.2489,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B8",
+    "form": "rect",
+    "x": -0.749,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B9",
+    "form": "rect",
+    "x": -1.2489,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B10",
+    "form": "rect",
+    "x": -1.749,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B11",
+    "form": "rect",
+    "x": -2.2489,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "B12",
+    "form": "rect",
+    "x": -2.749,
+    "y": 0.7516,
+    "sx": 0.28,
+    "sy": 0.95,
+    "tht": false
+   },
+   {
+    "nummer": "SH",
+    "form": "circle",
+    "x": -2.4011,
+    "y": -2.1501,
+    "sx": 1.2,
+    "sy": 1.2,
+    "tht": true,
+    "bohrung": [
+     0.7,
+     0.7
+    ]
+   },
+   {
+    "nummer": "SH",
+    "form": "circle",
+    "x": -2.4011,
+    "y": 2.1501,
+    "sx": 1.2,
+    "sy": 1.2,
+    "tht": true,
+    "bohrung": [
+     0.7,
+     0.7
+    ]
+   },
+   {
+    "nummer": "SH",
+    "form": "circle",
+    "x": 2.399,
+    "y": -2.1501,
+    "sx": 1.2,
+    "sy": 1.2,
+    "tht": true,
+    "bohrung": [
+     0.7,
+     0.7
+    ]
+   },
+   {
+    "nummer": "SH",
+    "form": "circle",
+    "x": 2.399,
+    "y": 2.1501,
+    "sx": 1.2,
+    "sy": 1.2,
+    "tht": true,
+    "bohrung": [
+     0.7,
+     0.7
+    ]
+   }
+  ],
+  "loecher": [
+   {
+    "x": -3.7511,
+    "y": 0.0,
+    "d": 0.65
+   },
+   {
+    "x": 3.7501,
+    "y": 0.0,
+    "d": 0.8
+   }
+  ],
+  "umriss": {
+   "x": -0.001,
+   "y": 0.0,
+   "b": 8.94,
+   "t": 4.6,
+   "dreh": "0,0,0"
+  }
+ },
+ "SW_Alps_SKRPACE010_4.2x3.2mm": {
+  "lcsc": "C139797",
+  "hoehe": 2.5,
+  "bemerkung": "Alps SKRPACE010 Taster 4,2 x 3,2 x 2,5 mm (Pads 1+2 = Kontakt A, 3+4 = Kontakt B)",
+  "pads": [
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": -2.1001,
+    "y": -1.0749,
+    "sx": 1.05,
+    "sy": 0.7,
+    "tht": false
+   },
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": 2.1001,
+    "y": -1.0749,
+    "sx": 1.05,
+    "sy": 0.7,
+    "tht": false
+   },
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": -2.1001,
+    "y": 1.0749,
+    "sx": 1.05,
+    "sy": 0.7,
+    "tht": false
+   },
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": 2.1001,
+    "y": 1.0749,
+    "sx": 1.05,
+    "sy": 0.7,
+    "tht": false
+   }
+  ],
+  "loecher": [],
+  "umriss": {
+   "x": 0.0,
+   "y": 0.0001,
+   "b": 4.6982,
+   "t": 3.2,
+   "dreh": "0,0,0"
+  }
+ },
+ "JST_GHD_SM30B-GHDS-A-TF_2x15_P1.25mm_Horizontal": {
+  "lcsc": "C595188",
+  "hoehe": 0.0,
+  "bemerkung": "JST GHD 2 x 15, 1,25 mm, liegend, verriegelnd (SM30B-GHDS-A-TF)",
+  "pads": [
+   {
+    "nummer": "16",
+    "form": "rect",
+    "x": -0.0,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "15",
+    "form": "rect",
+    "x": -0.0,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "14",
+    "form": "rect",
+    "x": 1.25,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "13",
+    "form": "rect",
+    "x": 1.25,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "12",
+    "form": "rect",
+    "x": 2.5,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "11",
+    "form": "rect",
+    "x": 2.5,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "10",
+    "form": "rect",
+    "x": 3.75,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "9",
+    "form": "rect",
+    "x": 3.75,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "8",
+    "form": "rect",
+    "x": 5.0,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "7",
+    "form": "rect",
+    "x": 5.0,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "6",
+    "form": "rect",
+    "x": 6.2499,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "5",
+    "form": "rect",
+    "x": 6.2499,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "4",
+    "form": "rect",
+    "x": 7.5,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "3",
+    "form": "rect",
+    "x": 7.5,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "2",
+    "form": "rect",
+    "x": 8.7499,
+    "y": 2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "1",
+    "form": "rect",
+    "x": 8.7499,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "17",
+    "form": "rect",
+    "x": -1.25,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "18",
+    "form": "rect",
+    "x": -1.25,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "19",
+    "form": "rect",
+    "x": -2.5,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "20",
+    "form": "rect",
+    "x": -2.5,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "21",
+    "form": "rect",
+    "x": -3.75,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "22",
+    "form": "rect",
+    "x": -3.75,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "23",
+    "form": "rect",
+    "x": -5.0,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "24",
+    "form": "rect",
+    "x": -5.0,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "25",
+    "form": "rect",
+    "x": -6.25,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "26",
+    "form": "rect",
+    "x": -6.25,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "27",
+    "form": "rect",
+    "x": -7.5,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "28",
+    "form": "rect",
+    "x": -7.5,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "29",
+    "form": "rect",
+    "x": -8.75,
+    "y": -2.925,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   },
+   {
+    "nummer": "30",
+    "form": "rect",
+    "x": -8.75,
+    "y": 2.9251,
+    "sx": 0.6,
+    "sy": 1.7,
+    "tht": false
+   }
+  ],
+  "loecher": [],
+  "umriss": {
+   "x": 0.0,
+   "y": 0.0,
+   "b": 22.01,
+   "t": 6.85,
+   "dreh": "0,0,0"
+  }
+ }
+}

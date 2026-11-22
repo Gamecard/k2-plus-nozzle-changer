@@ -1,0 +1,8 @@
+DRC: 2 Einträge (Fehler 0, Warnungen 2)
+    warning  silk_edge_clearance                 2
+Nicht verbunden: 0 Einträge (Fehler 0, Warnungen 0)
+Schaltplan-Parität: 0 Einträge (Fehler 0, Warnungen 0)
+Motor-Strompfade fest in voller Breite vorverlegt: BMA1, BMA2, BMB1, BMB2, SRA, SRB
+Insel Ebene_VIN_L5_2 (L5): gefüllt 1 Stück(e) 493.1 mm²
+Insel Ebene_VIN_L5_1 (L5): gefüllt 1 Stück(e) 168.0 mm²
+Leistungsnetze: kein Stück über 2 mm schmaler als die Klasse (Leistung_VIN 0.5 / Motor 0.4 / Schalt 0.3 mm) außerhalb einer Fläche ✓

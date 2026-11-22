@@ -1,0 +1,25 @@
+Drehungs-Nachweis für die JLC-Bestückung (CPL)
+
+Zweck: Für jedes bestückte Teil wird geprüft, ob Pin 1 laut Platine mit Pin 1 laut CPL-Datei (Mitte + Drehung) und dem
+Bibliotheksteil von JLC/LCSC übereinstimmt. Ergebnis im Fertigbau: ausgabe/drehung-nachweis.txt
+(veröffentlichter Stand: fertigung/drehung-nachweis.txt).
+
+Rohdaten: Die Bibliotheksdaten je C-Nummer (EasyEDA/LCSC) gehören dem Anbieter und liegen NICHT im Repository.
+Sie werden in roh/easyeda/<C-Nummer>.json erwartet und lassen sich mit easyeda_holen.py laden (gesendet wird nur die
+C-Nummer, ohne Anmeldung, mit Pause zwischen den Abrufen; bricht bei HTTP 403 ab). Heruntergeladene Daten nur mit
+"python3 -I" auswerten. Ohne Rohdaten bricht der Nachweis im Fertigbau ab.
+
+  python3 -I werkzeuge/drehung/easyeda_holen.py werkzeuge/drehung/roh/easyeda fertigung/jlcpcb_bom.csv
+
+Werkzeuge:
+- easyeda_holen.py     Abruf je C-Nummer aus einer oder mehreren BOM-Dateien (vorhandene Dateien werden nicht erneut geholt)
+- drehung_pruefen.py   Pad-Lage je Padnummer: JLC-Bibliotheksteil gegen KiCad-Footprint, vier Lesarten der Unterseite
+                       (geeicht an Vorschau-Ergebnissen einer früheren Platine: nur Lesart A stimmt)
+- drehung_tabelle.py   bildet daraus die Tabellen JLC_DREHUNG_LCSC / JLC_DREHUNG_VORSCHAU für generator/kopfplatine.py
+- drehung_nachweis.py  Nachweis CPL + Bibliothek gegen die Platine (läuft in "bauen.sh fertig")
+
+Ablauf nach neuem Abruf: drehung_pruefen.py (--modell A, --json <auswertung.json>) -> drehung_tabelle.py -> die zwei
+Tabellen in generator/kopfplatine.py ersetzen -> bauen.sh fertig <ses>.
+
+Stand des veröffentlichten Nachweises: 20 von 230 Teilen mit Bibliotheksdaten geprüft, 0 Fehler. Alle übrigen gepolten Teile
+sind in der JLC-Vorschau von Hand zu prüfen (Liste in fertigung/bestellangaben.md, Abschnitt 5).

@@ -1,0 +1,25 @@
+# Ausgaben und Zwischenstände eines Neubaus (toolhead-pcb/bauen.sh)
+toolhead-pcb/ausgabe/
+toolhead-pcb/zwischen/
+# fremde Rohdaten (Bibliotheksdaten der Bauteilanbieter) – werden bei Bedarf lokal geladen
+toolhead-pcb/werkzeuge/drehung/roh/
+toolhead-pcb/zwischen/easyeda/
+
+# Python
+__pycache__/
+*.pyc
+
+# KiCad: lokale Einstellungen, Sperren, Sicherungen, Cache
+*.kicad_prl
+*.lck
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+fp-info-cache
+
+# Sicherungen und Protokolle
+*.bak
+*.bak-*
+*.orig
+*.log
+.~lock*

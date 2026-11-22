@@ -1,0 +1,6 @@
+Stegstellen des Nutzens (Fertigbau, Schalter K2_STEGE_SPERREN): Spanne 7 mm an der Kante, kupferfreie Zone 8 × 1 mm (alle 6 Kupferlagen, keine Bahnen/Vias/Flächen)
+  Steg_L1 (links, Mitte 32.25 mm): Zone x -0.50…1.00 / y 28.25…36.25 – keine Bahn/Via/Pad ✓
+  Steg_R1 (rechts, Mitte 22 mm): Zone x 51.00…52.50 / y 18.00…26.00 – keine Bahn/Via/Pad ✓
+  Steg_R2 (rechts, Mitte 46.25 mm): Zone x 51.00…52.50 / y 42.25…50.25 – keine Bahn/Via/Pad ✓
+  Steg_R3 (rechts, Mitte 70.5 mm): Zone x 51.00…52.50 / y 66.50…74.50 – keine Bahn/Via/Pad ✓
+  Steg_U1 (unten, Mitte 15.5 mm): Zone x 11.50…19.50 / y 75.80…77.30 – keine Bahn/Via/Pad ✓

@@ -1,0 +1,4 @@
+Netzliste OK: 162 Netze, 48 offene Pins, 254 Bauteile – Soll-Netzliste Pin für Pin identisch; HV-Netze nur an Leistungsteilen; J2 entfallen (F10); VBUS2 nie an V5; USB-C-Strom nur über Dioden-ODER an den LDO; Gates mit 100 Ω/100 kΩ; Lötbrücken im Werkzustand; MCU-USB nur über U11.
+  · [F9] 14 Einzelstecker: Belegung, Nachbarregel 24 V/empfindlich, USB-Paare, Versorgung neben Masse geprüft
+  · 286 IC-/Stecker-Pins gegen die unabhängigen SCHALTUNG.md-Tabellen geprüft
+  · unbestückt (DNP): C27, C28, C29, R21

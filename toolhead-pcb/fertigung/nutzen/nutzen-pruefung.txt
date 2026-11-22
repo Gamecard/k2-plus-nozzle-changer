@@ -1,0 +1,80 @@
+Prüfung Nutzen kopfplatine-p19-nutzen.kicad_pcb (Kopfplatine P19, Einzelplatine 52 × 76.8 mm)
+
+1 Kontur
+  ✓ Edge.Cuts geschlossen (KiCad GetBoardPolygonOutlines): True
+  ✓ 1 Außenkontur mit 5 Fräsausschnitten (erwartet 5: zwischen je zwei Stegen ein Ausschnitt)
+  ✓ Nutzen 71.00 × 90.80 mm (Linienmitte), Soll 71 × 90.8
+  ✓ beide Richtungen ≥ 70 mm (JLC-SMT ohne eigene Ränder): 71.00 mm
+  ✓ Ränder links/rechts 7.5 mm, oben/unten 5 mm (JLC ≥ 5 mm)
+
+2 Frässchlitz (gemessen am fertigen Umriss: Strahl von der Platinenkante nach außen bis zum Rahmen)
+  ✓ Schlitzbreite an 392 Messstellen 2.000…2.005 mm (Soll 2, JLC-Mindestschlitz 1,0 mm, Nutzenabstand 1,6 oder 2 mm)
+
+3 Haltestege und Mausbisse
+  | Steg | Kante, Mitte | Breite an der Kante / in Schlitzmitte | Mausbisse | Loch-Kontur | Kupfer–Loch | nächster Stecker | nächster MLCC ≥ 0805 | nächstes Bauteil |
+  |---|---|---|---|---|---|---|---|---|
+  | Steg_L1 | links 32.25 | 6.60 / 5.00 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J34 8.27 mm | C42 7.51 mm | Q7 2.60 mm |
+  ✓ Steg_L1: Stegbreite in Schlitzmitte 5.00 mm ≥ 5 mm (JLC: Steg mit Mausbissen ≥ 5 mm; Messraster 0,01 mm, Bögen als Vieleck)
+  ✓ Steg_L1: Steg an der Platinenkante 7 mm (Berührpunkte der halbrunden Schlitzenden; 0,02 mm vor der Kante gemessen 6.60, Soll 6.60) = Länge der Mausbiss-Reihe
+  ✓ Steg_L1: Mausbisse Ø 0.50 mm (JLC 0,5–0,8), Abstand zwischen den Löchern 0.30 mm (JLC 0,2–0,3)
+  ✓ Steg_L1: alle Löcher innerhalb der Platinenkontur (+0.000 mm) -> Bruchlinie in der Platine, nichts steht über
+  ✓ Steg_L1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm; JLC NPTH–Kupfer 0,2 mm)
+  ✓ Steg_L1: Stecker J34 8.27 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_L1: Bauteil Q7 2.60 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_L1: MLCC≥0805 C42 7.51 mm vom Steg (Grenze 3.5 mm)
+  | Steg_R1 | rechts 22 | 6.60 / 5.00 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J31 5.95 mm | C16 8.25 mm | D11 2.05 mm |
+  ✓ Steg_R1: Stegbreite in Schlitzmitte 5.00 mm ≥ 5 mm (JLC: Steg mit Mausbissen ≥ 5 mm; Messraster 0,01 mm, Bögen als Vieleck)
+  ✓ Steg_R1: Steg an der Platinenkante 7 mm (Berührpunkte der halbrunden Schlitzenden; 0,02 mm vor der Kante gemessen 6.60, Soll 6.60) = Länge der Mausbiss-Reihe
+  ✓ Steg_R1: Mausbisse Ø 0.50 mm (JLC 0,5–0,8), Abstand zwischen den Löchern 0.30 mm (JLC 0,2–0,3)
+  ✓ Steg_R1: alle Löcher innerhalb der Platinenkontur (+0.000 mm) -> Bruchlinie in der Platine, nichts steht über
+  ✓ Steg_R1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm; JLC NPTH–Kupfer 0,2 mm)
+  ✓ Steg_R1: Stecker J31 5.95 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_R1: Bauteil D11 2.05 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_R1: MLCC≥0805 C16 8.25 mm vom Steg (Grenze 3.5 mm)
+  | Steg_R2 | rechts 46.25 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J43 16.28 mm | C_V24C 5.75 mm | R9 1.41 mm |
+  ✓ Steg_R2: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm (JLC: Steg mit Mausbissen ≥ 5 mm; Messraster 0,01 mm, Bögen als Vieleck)
+  ✓ Steg_R2: Steg an der Platinenkante 7 mm (Berührpunkte der halbrunden Schlitzenden; 0,02 mm vor der Kante gemessen 6.60, Soll 6.60) = Länge der Mausbiss-Reihe
+  ✓ Steg_R2: Mausbisse Ø 0.50 mm (JLC 0,5–0,8), Abstand zwischen den Löchern 0.30 mm (JLC 0,2–0,3)
+  ✓ Steg_R2: alle Löcher innerhalb der Platinenkontur (+0.000 mm) -> Bruchlinie in der Platine, nichts steht über
+  ✓ Steg_R2: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm; JLC NPTH–Kupfer 0,2 mm)
+  ✓ Steg_R2: Stecker J43 16.28 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_R2: Bauteil R9 1.41 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_R2: MLCC≥0805 C_V24C 5.75 mm vom Steg (Grenze 3.5 mm)
+  | Steg_R3 | rechts 70.5 | 6.60 / 5.00 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J43 5.95 mm | C2 4.61 mm | D10 5.41 mm |
+  ✓ Steg_R3: Stegbreite in Schlitzmitte 5.00 mm ≥ 5 mm (JLC: Steg mit Mausbissen ≥ 5 mm; Messraster 0,01 mm, Bögen als Vieleck)
+  ✓ Steg_R3: Steg an der Platinenkante 7 mm (Berührpunkte der halbrunden Schlitzenden; 0,02 mm vor der Kante gemessen 6.60, Soll 6.60) = Länge der Mausbiss-Reihe
+  ✓ Steg_R3: Mausbisse Ø 0.50 mm (JLC 0,5–0,8), Abstand zwischen den Löchern 0.30 mm (JLC 0,2–0,3)
+  ✓ Steg_R3: alle Löcher innerhalb der Platinenkontur (+0.000 mm) -> Bruchlinie in der Platine, nichts steht über
+  ✓ Steg_R3: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm; JLC NPTH–Kupfer 0,2 mm)
+  ✓ Steg_R3: Stecker J43 5.95 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_R3: Bauteil D10 5.41 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_R3: MLCC≥0805 C2 4.61 mm vom Steg (Grenze 3.5 mm)
+  | Steg_U1 | unten 15.5 | 6.60 / 4.98 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J39 7.19 mm | C_LED 5.84 mm | D17 4.20 mm |
+  ✓ Steg_U1: Stegbreite in Schlitzmitte 4.98 mm ≥ 5 mm (JLC: Steg mit Mausbissen ≥ 5 mm; Messraster 0,01 mm, Bögen als Vieleck)
+  ✓ Steg_U1: Steg an der Platinenkante 7 mm (Berührpunkte der halbrunden Schlitzenden; 0,02 mm vor der Kante gemessen 6.60, Soll 6.60) = Länge der Mausbiss-Reihe
+  ✓ Steg_U1: Mausbisse Ø 0.50 mm (JLC 0,5–0,8), Abstand zwischen den Löchern 0.30 mm (JLC 0,2–0,3)
+  ✓ Steg_U1: alle Löcher innerhalb der Platinenkontur (+0.000 mm) -> Bruchlinie in der Platine, nichts steht über
+  ✓ Steg_U1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm; JLC NPTH–Kupfer 0,2 mm)
+  ✓ Steg_U1: Stecker J39 7.19 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_U1: Bauteil D17 4.20 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_U1: MLCC≥0805 C_LED 5.84 mm vom Steg (Grenze 3.5 mm)
+
+4 Passermarken und Werkzeuglöcher (JLC: Marke Ø 1 mm, Lötstopp-Öffnung Ø 2 mm, Mitte 3,85 mm von den Nutzenkanten, ≥ 3,35 mm von der Platinenkante; Werkzeugloch Ø 2 mm NPTH)
+  ✓ FID1 (-5.65/6.00): Kupfer Ø 1.00, Öffnung Ø 2.00 mm, 3.85 mm vom Nutzenrand, 5.65 mm von der Platine
+  ✓ FID2 (-5.65/72.00): Kupfer Ø 1.00, Öffnung Ø 2.00 mm, 3.85 mm vom Nutzenrand, 5.65 mm von der Platine
+  ✓ FID3 (57.65/72.00): Kupfer Ø 1.00, Öffnung Ø 2.00 mm, 3.85 mm vom Nutzenrand, 5.65 mm von der Platine
+  ✓ WL1 (-5.65/-3.15): NPTH Ø 2.00 mm, 3.85 mm vom Nutzenrand, 6.84 mm von der Platine
+  ✓ WL2 (57.65/-3.15): NPTH Ø 2.00 mm, 3.85 mm vom Nutzenrand, 6.84 mm von der Platine
+  ✓ WL3 (-5.65/79.95): NPTH Ø 2.00 mm, 3.85 mm vom Nutzenrand, 6.84 mm von der Platine
+  ✓ 3 Passermarken (unsymmetrisch) und 3 Werkzeuglöcher
+
+5 Bauteile
+  ✓ J16 ragt 0.94 mm über die Platinenkante in den Schlitz (Schlitz 2 mm, Luft zum Rahmen 1.06 mm; Überstand laut Generator erlaubt: True)
+  ✓ alle übrigen Bauteile innerhalb der Einzelplatine (250 geprüft)
+  ✓ kleinster Abstand Bauteil (Courtyard) – Nutzenaußenkante 6.05 mm (Leitfaden ≥ 3 mm)
+
+6 Bestückungsdatei des Nutzens (gegen die der Einzelplatine)
+  ✓ 230 Zeilen; jede = Einzelplatine verschoben um X -40.50 / Y +123.80 mm (Bezug linke untere Nutzenecke = Bezug der Nutzen-Gerber), Drehung und Seite gleich; Abweichungen: []
+  ✓ alle Mitten im Nutzen: X 11.80…59.10, Y 10.40…80.55 mm
+
+ERGEBNIS: alle Prüfungen bestanden ✓

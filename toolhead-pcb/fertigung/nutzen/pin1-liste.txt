@@ -1,0 +1,81 @@
+Ref     Seite Wert                   Mitte (X,Y)    Pad1 (X,Y)     Pin 1 im Viewer
+D1      oben  SMBJ51A                ( 37.0, 59.8) ( 34.8, 59.8)  links
+D10     unten USBLC6-2SC6            ( 54.0, 10.8) ( 52.9,  9.8)  unten rechts
+D11     oben  LED gruen              ( 57.7, 64.0) ( 56.8, 64.0)  links
+D12     unten B5819W                 ( 56.3, 69.9) ( 54.6, 69.9)  rechts
+D13     unten B5819W                 ( 52.3, 69.9) ( 52.3, 68.3)  unten
+D14     oben  LED gelb               ( 34.8, 54.9) ( 34.8, 54.0)  unten
+D15     unten B5819W                 ( 32.8, 19.4) ( 31.1, 19.4)  rechts
+D16     unten B5819W                 ( 22.8, 57.6) ( 21.1, 57.6)  rechts
+D17     unten B5819W                 ( 33.8, 10.4) ( 33.8,  8.8)  unten
+D18     unten SRV05-4                ( 52.0, 15.4) ( 50.8, 14.5)  unten rechts
+D19     unten SRV05-4                ( 53.7, 21.9) ( 54.7, 20.7)  unten links
+D2      unten BAT54SW                ( 45.0, 56.3) ( 44.1, 55.6)  unten rechts
+D20     unten BAT54SW                ( 52.0, 44.3) ( 51.1, 43.6)  unten rechts
+D3      oben  SS310                  ( 55.0, 41.0) ( 53.0, 41.0)  links
+D4      unten BAT54SW                ( 43.7, 34.6) ( 44.5, 35.3)  oben links
+D5      unten B5819W                 ( 51.5, 55.8) ( 49.8, 55.8)  rechts
+D6      oben  LED gruen              ( 51.5, 61.3) ( 50.6, 61.3)  links
+D7      oben  LED gelb               ( 47.0, 31.0) ( 46.1, 31.0)  links
+D8      unten USBLC6-2SC6            ( 30.4, 75.5) ( 31.5, 76.4)  oben links
+D9      unten USBLC6-2SC6            ( 47.7, 15.3) ( 48.8, 16.3)  oben links
+D_C1    unten USBLC6-2SC6            ( 17.8, 80.5) ( 18.7, 79.4)  unten links
+D_C2    unten B5819W                 ( 17.8, 75.5) ( 16.1, 75.5)  rechts
+D_CAN   unten NUP2105L               ( 48.6, 68.3) ( 47.7, 67.3)  unten rechts
+J1      oben  ZE 6-pol.              ( 52.3, 77.3) ( 56.0, 74.7)  unten rechts
+J16     oben  USB-C liegend          ( 17.8, 80.5) ( 21.0, 76.5)  unten rechts
+J3      oben  ZE 4-pol.              ( 24.3, 24.5) ( 22.0, 27.0)  oben links
+J30     oben  GH 2-pol.              ( 43.6, 65.9) ( 44.2, 64.1)  unten rechts
+J31     oben  GH 3-pol.              ( 52.3, 67.9) ( 50.5, 66.7)  unten links
+J32     oben  GH 3-pol.              ( 36.7, 66.3) ( 37.9, 64.5)  unten rechts
+J33     oben  GH 4-pol.              ( 39.8, 80.0) ( 41.6, 78.2)  unten rechts
+J34     oben  GH 3-pol.              ( 13.8, 66.3) ( 15.1, 64.5)  unten rechts
+J35     oben  GH 3-pol.              ( 21.4, 66.3) ( 22.7, 64.5)  unten rechts
+J36     oben  GH 3-pol.              ( 29.0, 66.3) ( 30.3, 64.5)  unten rechts
+J37     oben  GH 3-pol.              ( 34.3, 17.2) ( 33.1, 19.0)  oben links
+J39     oben  GH 2-pol.              ( 12.8, 14.9) ( 12.2, 16.8)  oben links
+J40     oben  GH 5-pol.              ( 23.3, 54.5) ( 25.8, 52.6)  unten rechts
+J41     oben  GH 6-pol.              ( 40.4, 23.2) ( 43.5, 21.3)  unten rechts
+J42     oben  GH 5-pol.              ( 43.2, 17.2) ( 40.7, 19.0)  oben links
+J43     oben  GH 5-pol.              ( 52.3, 13.8) ( 50.5, 11.3)  unten links
+J44     oben  GH 5-pol.              ( 28.5, 80.0) ( 31.0, 78.2)  unten rechts
+Q1      oben  CSD19537Q3             ( 33.5, 44.6) ( 32.1, 45.6)  oben links
+Q10     unten AO3400A                ( 37.0, 16.0) ( 36.1, 15.1)  unten rechts
+Q11     unten AO3400A                ( 23.1, 54.2) ( 22.1, 53.3)  unten rechts
+Q12     unten AO3400A                ( 37.4, 11.3) ( 38.3, 10.4)  unten links
+Q13     unten AO3400A                ( 41.3, 15.8) ( 42.3, 14.9)  unten links
+Q2      oben  CSD19537Q3             ( 33.5, 40.3) ( 32.1, 41.3)  oben links
+Q3      oben  CSD19537Q3             ( 33.5, 31.8) ( 32.1, 32.8)  oben links
+Q4      oben  CSD19537Q3             ( 33.5, 36.1) ( 32.1, 37.1)  oben links
+Q5      oben  CSD19537Q3             ( 12.2, 30.8) ( 13.7, 29.9)  unten rechts
+Q6      oben  CSD19537Q3             ( 12.2, 35.1) ( 13.7, 34.1)  unten rechts
+Q7      oben  CSD19537Q3             ( 12.2, 43.6) ( 13.7, 42.6)  unten rechts
+Q8      oben  CSD19537Q3             ( 12.2, 39.3) ( 13.7, 38.4)  unten rechts
+Q9      unten AO3400A                ( 55.8, 65.9) ( 56.7, 65.0)  unten links
+TH1     unten NTC 100k               ( 48.6, 45.7) ( 47.8, 45.7)  rechts
+TP1     oben  VIN                    ( 37.5, 49.4) ( 37.5, 49.4)  Mitte
+TP10    unten DIO                    ( 52.5, 47.3) ( 52.5, 47.3)  Mitte
+TP11    unten CLK                    ( 30.4, 26.2) ( 30.4, 26.2)  Mitte
+TP12    unten RST                    ( 50.1, 30.4) ( 50.1, 30.4)  Mitte
+TP13    unten GND                    ( 35.5, 54.9) ( 35.5, 54.9)  Mitte
+TP14    unten GND                    ( 28.0, 50.9) ( 28.0, 50.9)  Mitte
+TP2     unten CANH                   ( 45.1, 68.3) ( 45.1, 68.3)  Mitte
+TP3     unten CANL                   ( 45.2, 71.2) ( 45.2, 71.2)  Mitte
+TP4     unten V24                    ( 31.0, 45.4) ( 31.0, 45.4)  Mitte
+TP5     oben  V5                     ( 28.5, 45.4) ( 28.5, 45.4)  Mitte
+TP6     unten 3V3                    ( 51.5, 41.4) ( 51.5, 41.4)  Mitte
+TP7     unten AVDD                   ( 26.7, 72.8) ( 26.7, 72.8)  Mitte
+U1      oben  STM32G0B1RBT6          ( 43.5, 40.3) ( 37.8, 44.0)  oben links
+U10     oben  TJA1051T/3             ( 45.1, 59.5) ( 42.7, 61.4)  oben links
+U11     unten FSUSB42MUX             ( 34.0, 50.5) ( 36.1, 51.5)  oben links
+U12     unten SN74AHCT1G125          ( 29.3, 60.5) ( 30.3, 59.4)  unten links
+U13     unten TLV1701AIDBVR          ( 47.4, 34.3) ( 46.3, 33.3)  unten rechts
+U2      oben  TPS54360DDA            ( 54.0, 35.0) ( 52.1, 32.3)  unten links
+U3      oben  LMR51420YDDCR          ( 51.5, 55.8) ( 50.4, 56.8)  oben links
+U4      unten ME6211C33M5G           ( 44.5, 30.3) ( 43.4, 29.3)  unten rechts
+U5      oben  CH334P                 ( 16.0, 53.3) ( 15.2, 51.8)  unten links
+U7      oben  TMC5160A-TA            ( 22.9, 34.8) ( 18.8, 37.5)  oben links
+U8      unten ADS1220IPWR            ( 17.5, 68.8) ( 14.6, 66.5)  unten rechts
+U9      unten LIS2DW12TR             ( 37.5, 33.8) ( 36.7, 34.7)  oben rechts
+Y1      oben  12 MHz                 ( 15.0, 48.0) ( 16.1, 48.8)  oben rechts
+Y2      unten 8 MHz                  ( 42.8, 38.3) ( 41.7, 39.1)  oben rechts

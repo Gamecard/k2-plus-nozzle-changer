@@ -1,0 +1,53 @@
+Randabstand nach Leitfaden (externes Prüfwerkzeug randabstand_pruefen.py, nicht im Repository; Grenze 3 mm), Exit 1
+DEUTUNG: Einzelplatine 52 × 76,8 mm. Bei Bestellung als Einzelplatine hängt JLC links und rechts Ränder an; dort stehen Stecker und Bauteile näher als 3 mm an der Kante (Liste unten). Das ist mit dieser Platzierung NICHT erfüllbar (Bauteillagen fest, DSN unverändert). Deshalb wird als eigener Nutzen bestellt („Panel by Customer“): ausgabe/nutzen/ – dort ist die Prüfung erfüllt (ausgabe/nutzen/randabstand.txt, ausgabe/nutzen/nutzen-pruefung.txt). Die Einzel-Gerber nicht ohne Nutzen bestellen.
+Platine 52.1 × 76.9 mm (Kontur inkl. Linienbreite)
+JLC-SMT setzt Ränder an: links, rechts (Richtung < 70 mm) – dort KEINE Stecker an die Kante!
+
+Kante links  <-- RAND-KANTE:
+  J39      GH 2-pol.                    Seite oben  Abstand 0.13 mm  !! STECKER
+  J34      GH 3-pol.                    Seite oben  Abstand 0.55 mm  !! STECKER
+  Q5       CSD19537Q3                   Seite oben  Abstand 0.75 mm
+  Q6       CSD19537Q3                   Seite oben  Abstand 0.75 mm
+  Q7       CSD19537Q3                   Seite oben  Abstand 0.75 mm
+  Q8       CSD19537Q3                   Seite oben  Abstand 0.75 mm
+  C59      1 nF                         Seite unten Abstand 1.39 mm
+  C28      10 pF                        Seite oben  Abstand 1.54 mm
+  R21      10k                          Seite unten Abstand 1.57 mm
+  C_D4     10 µF                        Seite oben  Abstand 1.68 mm
+  C29      100 nF                       Seite unten Abstand 2.29 mm
+  R53      1k 0,1%                      Seite unten Abstand 2.47 mm
+  H4       M2                           Seite oben  Abstand 2.53 mm
+  C26      1 µF                         Seite unten Abstand 2.54 mm
+  J16      USB-C liegend                Seite oben  Abstand 2.98 mm  !! STECKER
+
+Kante rechts  <-- RAND-KANTE:
+  J1       ZE 6-pol.                    Seite oben  Abstand 1.46 mm  !! STECKER
+  R9       470k                         Seite unten Abstand 1.46 mm
+  C9       15 nF                        Seite unten Abstand 1.50 mm
+  L1       33 µH                        Seite oben  Abstand 1.76 mm
+  D11      LED gruen                    Seite oben  Abstand 2.10 mm
+  R11      240k                         Seite oben  Abstand 2.28 mm
+  R12      287k                         Seite oben  Abstand 2.28 mm
+  R13      10k                          Seite oben  Abstand 2.28 mm
+  R14      7k5                          Seite oben  Abstand 2.28 mm
+  C10      100 pF                       Seite oben  Abstand 2.30 mm
+  H3       M2                           Seite oben  Abstand 2.49 mm
+  D12      B5819W                       Seite unten Abstand 2.88 mm
+  D3       SS310                        Seite oben  Abstand 2.96 mm
+
+Kante oben:
+  J16      USB-C liegend                Seite oben  Abstand RAGT ÜBER  !! STECKER
+  J1       ZE 6-pol.                    Seite oben  Abstand 0.55 mm  !! STECKER
+  J33      GH 4-pol.                    Seite oben  Abstand 0.55 mm  !! STECKER
+  J44      GH 5-pol.                    Seite oben  Abstand 0.55 mm  !! STECKER
+  D_C1     USBLC6-2SC6                  Seite unten Abstand 1.20 mm
+  R4       5k1                          Seite unten Abstand 2.32 mm
+
+Kante unten:
+  D17      B5819W                       Seite unten Abstand 1.06 mm
+  J43      GH 5-pol.                    Seite oben  Abstand 1.76 mm  !! STECKER
+  D10      USBLC6-2SC6                  Seite unten Abstand 2.11 mm
+  Q12      AO3400A                      Seite unten Abstand 2.42 mm
+
+28 Bauteil(e) näher als 3.0 mm an einer Kante, die einen Rand bekommt.
+WICHTIG – Stecker an Rand-Kanten (verschieben oder Nutzen selbst zeichnen): J39 (links), J34 (links), J16 (links), J1 (rechts)

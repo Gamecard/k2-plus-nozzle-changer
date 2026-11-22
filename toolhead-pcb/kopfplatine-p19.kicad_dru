@@ -1,0 +1,49 @@
+(version 1)
+# Kopfplatine P19 (K2 Plus, Düsenwechsler) – Zusatzregeln (LAYOUT-VORGABE 6)
+# JLC (capabilities 11.11.2026): Via-Loch zu Via-Loch 0,2 mm, Pad-Loch zu Loch 0,45 mm; Platinenwert 0,25 mm gilt für Vias
+(rule "Padloch zu Loch"
+  (condition "A.Type == 'Pad' || B.Type == 'Pad'")
+  (constraint hole_to_hole (min 0.45mm)))
+(rule "Kupfer zum Rand"
+  (constraint edge_clearance (min 0.3mm)))
+# Leistung (VIN bis 60 V) hält über die Netzklasse 0,2 mm (IPC-2221B, 31…150 V außen beschichtet: 0,13 mm)
+(rule "Wärmepads massiv"
+  (condition "A.memberOfFootprint('U2') || A.memberOfFootprint('U7')")
+  (constraint zone_connection solid))
+# CSD19537Q3 (VSON NexFET): Pad 3–4 im Hersteller-Landmuster nur 0,14 mm < Netzklasse Leistung (0,2 mm);
+# gilt NUR zwischen Pads desselben MOSFETs – zwischen Bauteilen greift weiter die Netzklasse
+(rule "NexFET-Pads Q1"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q1') && B.memberOfFootprint('Q1')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q2"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q2') && B.memberOfFootprint('Q2')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q3"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q3') && B.memberOfFootprint('Q3')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q4"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q4') && B.memberOfFootprint('Q4')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q5"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q5') && B.memberOfFootprint('Q5')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q6"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q6') && B.memberOfFootprint('Q6')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q7"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q7') && B.memberOfFootprint('Q7')")
+  (constraint clearance (min 0.1mm)))
+(rule "NexFET-Pads Q8"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('Q8') && B.memberOfFootprint('Q8')")
+  (constraint clearance (min 0.1mm)))
+# Feinraster-ICs: 0,1 mm nur für Nicht-Leistungsnetze (Leistung behält 0,2 mm aus der Netzklasse)
+(rule "Feinraster-ICs"
+  (condition "(A.memberOfFootprint('U5') || A.memberOfFootprint('U9') || A.memberOfFootprint('U1') || A.memberOfFootprint('U7') || A.memberOfFootprint('U11')) && !A.hasNetclass('Leistung_VIN') && !A.hasNetclass('Motor') && !A.hasNetclass('Schalt') && !A.hasNetclass('HV_Hilf') && !B.hasNetclass('Leistung_VIN') && !B.hasNetclass('Motor') && !B.hasNetclass('Schalt') && !B.hasNetclass('HV_Hilf')")
+  (constraint clearance (min 0.1mm)))
+# HV_Hilf: 0,1 mm nur zwischen Pads desselben ICs (TMC5160 0,5-mm-Raster, TPS54360)
+(rule "HV_Hilf im IC U2"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U2') && B.memberOfFootprint('U2') && (A.hasNetclass('HV_Hilf') || B.hasNetclass('HV_Hilf'))")
+  (constraint clearance (min 0.1mm)))
+(rule "HV_Hilf im IC U7"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U7') && B.memberOfFootprint('U7') && (A.hasNetclass('HV_Hilf') || B.hasNetclass('HV_Hilf'))")
+  (constraint clearance (min 0.1mm)))
