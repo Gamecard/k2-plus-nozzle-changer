@@ -4,12 +4,11 @@
 own cartridge with its own hotend and its own filament path; the print head parks one cartridge in a passive dock at the front
 and picks up another, so filament never has to be unloaded, cut or purged. Included are the mechanical design description
 (prototype 19 v2) and a complete, generator-built KiCad design of a new toolhead board (P19, revision 10) with Gerber,
-BOM and pick-and-place files. **Everything is ALPHA:** designed and checked by calculation and simulation only – nothing has been
-built or tested on a printer yet. Not affiliated with Creality. Licence: CERN-OHL-W v2 (see `LICENSE`).
+BOM and pick-and-place files. Status: designed and checked by calculation and simulation; not yet built or tested on a
+printer. Not affiliated with Creality. Licence: CERN-OHL-W v2 (see `LICENSE`).
 
-> **ALPHA – nicht gebaut, nicht erprobt.** Alles in diesem Repository ist konstruiert und rechnerisch geprüft, aber noch nie
-> gefertigt oder an einem Drucker betrieben worden. Wer etwas davon nachbaut, tut das auf eigene Gefahr
-> (siehe [`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md)).
+Stand: konstruiert und rechnerisch geprüft, noch nicht gebaut und nicht am Drucker erprobt. Lizenz und Haftung:
+[`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md).
 
 ## Worum es geht
 

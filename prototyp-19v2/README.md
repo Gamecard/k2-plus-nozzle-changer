@@ -4,11 +4,11 @@
 head carries the filament drive, a spring-loaded latch opened by two small solenoids, the sensors and the new toolhead board; each
 colour sits in its own aluminium cartridge with a complete hotend. Up to four cartridges park in a passive dock above the front
 door (no power, no sensors in the dock); a change only needs forward/backward moves of the head. The design was checked in CAD
-and by calculation (collisions, assembly, FEM, heat, tolerances, change time) – **it has not been built or tested**.
+and by calculation (collisions, assembly, FEM, heat, tolerances, change time); it has not been built or tested yet.
 CAD files are in `cad/` (reference models of third-party parts removed).
 
-> **ALPHA – nicht gebaut, nicht erprobt.** Alle Zahlen unten stammen aus dem CAD-Modell und aus Rechnungen/Simulationen mit teils
-> angenommenen Kaufteildaten. Nichts davon ist an echten Teilen bestätigt.
+Stand: noch nicht gebaut und nicht erprobt. Alle Zahlen unten stammen aus dem CAD-Modell und aus Rechnungen und Simulationen
+mit teils angenommenen Kaufteildaten; an echten Teilen ist davon noch nichts bestätigt.
 
 ![Kopf von hinten mit Kopfplatine und verlegten Kabeln](bilder/kopf_hinten_kopfplatine_f10.png)
 

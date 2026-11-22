@@ -5,10 +5,10 @@ toolhead board, runs from 24–48 V, talks to the Klipper host via CAN bus and a
 4-port hub (bed camera, Cartographer probe, MCU). It carries an STM32G0B1 MCU, a TMC5160 stepper driver with external MOSFETs,
 a 24-bit load-cell ADC, an accelerometer, five low-side outputs and all sensor inputs on 14 locking JST GH connectors.
 The KiCad files are produced by a Python generator (`bauen.sh`); Gerber, BOM and CPL files for JLCPCB are included.
-**ALPHA: never manufactured, never tested.**
+Status: not yet manufactured or tested.
 
-> **ALPHA – nicht gefertigt, nicht erprobt.** Schaltplan und Layout sind vollständig und ohne Fehler in den automatischen
-> Prüfungen, aber noch keine Platine wurde gebaut oder in Betrieb genommen. Lizenz und Haftung: [`../LIZENZ-UND-HAFTUNG.md`](../LIZENZ-UND-HAFTUNG.md).
+Stand: Schaltplan und Layout sind vollständig und bestehen die automatischen Prüfungen; gefertigt oder in Betrieb genommen
+wurde die Platine noch nicht. Lizenz und Haftung: [`../LIZENZ-UND-HAFTUNG.md`](../LIZENZ-UND-HAFTUNG.md).
 
 ![Platine von oben (KiCad-3D-Ansicht)](doku/bilder/render_oben.png)
 
