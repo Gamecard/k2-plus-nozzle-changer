@@ -3,8 +3,9 @@
 **English summary:** This repository contains a tool changer concept for the Creality K2 Plus 3D printer. Every colour gets its
 own cartridge with its own hotend and its own filament path; the print head parks one cartridge in a passive dock at the front
 and picks up another, so filament never has to be unloaded, cut or purged. Included are the mechanical design description
-(prototype 19 v2) and a complete, generator-built KiCad design of a new toolhead board (P19, revision 10) with Gerber,
-BOM and pick-and-place files. Status: designed and checked by calculation and simulation; not yet built or tested on a
+(prototype 19 v2), a complete, generator-built KiCad design of a new toolhead board (P19, revision 10) and a carrier
+board for a Raspberry Pi Compute Module 5 as the printer's Klipper host (alpha 2), each with Gerber, BOM and
+pick-and-place files. Status: designed and checked by calculation and simulation; not yet built or tested on a
 printer. Not affiliated with Creality. Licences: hardware design CERN-OHL-W v2 (`LICENSE`), program code
 GPL-3.0-or-later (`LICENSE-GPL-3.0.txt`).
 
@@ -50,6 +51,7 @@ Die nächste Patrone soll schon in der Ablage vorgeheizt werden. Gerechnet ergib
 |---|---|
 | [`prototyp-19v2/`](prototyp-19v2/) | Beschreibung der Mechanik (Prototyp 19 v2): Aufbau, Wechselablauf, Baugruppen, Kaufteile, offene Punkte; Bilder |
 | [`prototyp-19v2/cad/`](prototyp-19v2/cad/) | CAD-Daten: SolidCraft-Modell, STEP der Baugruppe, STL der Druckteile (ohne fremde Bezugsmodelle, siehe dort) |
+| [`cm5-carrier-pcb/`](cm5-carrier-pcb/) | Trägerplatine „K2-CM5-Träger Alpha 2“ für ein Raspberry Pi Compute Module 5 als Steuerrechner des Druckers: KiCad-Projekt, Python-Generator, Fertigungsdaten für JLCPCB, Lastenheft, Aufbau- und Bestellunterlagen |
 | [`toolhead-pcb/`](toolhead-pcb/) | Eigene Kopfplatine „P19, Fassung 10“: KiCad-Projekt, Python-Generator, Fertigungsdaten für JLCPCB, Schaltungsbeschreibung, Kabelliste, Prüfberichte, Klipper-Beispielkonfiguration |
 | [`LICENSE`](LICENSE) | Lizenztext CERN-OHL-W v2 (Hardware-Entwurf) |
 | [`LICENSE-GPL-3.0.txt`](LICENSE-GPL-3.0.txt) | Lizenztext GNU GPL Version 3 (Programmcode) |
@@ -64,6 +66,14 @@ Wechsler braucht. Einzelheiten: [`toolhead-pcb/README.md`](toolhead-pcb/README.m
 
 **Wichtig:** Die Platine hat keinen Anschluss mehr für das Original-Kopfkabel des Druckers. Für den Betrieb ist ein **eigenes
 Kabel vom Drucker zum Kopf** nötig (Versorgung + CAN und USB).
+
+## Der Steuerrechner in einem Satz
+
+Die Kopfplatine braucht einen Steuerrechner mit Klipper, der CAN und USB bereitstellt. Dafür liegt hier die Trägerplatine für
+ein **Raspberry Pi Compute Module 5** bei: Sie ersetzt die Original-Steuerplatine des K2 Plus, wird mit 24 V versorgt, spricht
+über RS485 und CAN mit dem Drucker und hat Anschlüsse für Display (DSI mit vier Datenleitungen, HDMI als Nachrüstoption,
+USB für Touch), Lüfter und eine serielle Konsole. Die Vorgängerfassung Alpha 1 ist gebaut und läuft im Drucker; Alpha 2 ist
+fertig entworfen und geprüft, aber noch nicht gefertigt. Einzelheiten: [`cm5-carrier-pcb/README.md`](cm5-carrier-pcb/README.md).
 
 ## Stand und bekannte offene Punkte (Stand 22.11.2026)
 

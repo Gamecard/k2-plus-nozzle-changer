@@ -1,0 +1,63 @@
+Randabstand (werkzeuge/randabstand_pruefen.py, Grenze 3 mm), Exit 0
+DEUTUNG: Einzelplatine 90 × 72.6 mm. Ohne eigenen Nutzen hängt JLC an Kante B und D Fertigungsränder an; dort stehen USB-A J17, HDMI J16 und J11 an der Kante. Deshalb wird NUR der eigene Nutzen bestellt (ausgabe/nutzen/); dort ist die Prüfung erfüllt (ausgabe/nutzen/randabstand.txt, nutzen-pruefung.txt).
+
+Platine 90.1 × 72.7 mm (Kontur inkl. Linienbreite)
+Beide Richtungen ≥ 70 mm – JLC braucht keine Ränder.
+
+Kante links:
+  J1       FPC-05FB-50PH20              Seite oben  Abstand RAGT ÜBER  !! STECKER
+  J7       XT30 24V                     Seite oben  Abstand RAGT ÜBER  !! STECKER
+  F3       PTC 0,5A 30V                 Seite unten Abstand 0.85 mm
+  FID1     Passermarke                  Seite oben  Abstand 0.95 mm
+  FID2     Passermarke                  Seite oben  Abstand 1.25 mm
+  FID4     Passermarke                  Seite unten Abstand 1.25 mm
+  TP12     PWR_FAIL                     Seite unten Abstand 1.55 mm
+  R50      10k                          Seite unten Abstand 1.85 mm
+
+Kante rechts:
+  H2       Befestigung T113-Platz (M3)  Seite oben  Abstand 0.11 mm
+  J12      DSI 22-pol. Kontakte oben    Seite oben  Abstand 0.11 mm  !! STECKER
+  FID6     Passermarke                  Seite unten Abstand 0.16 mm
+  FID3     Passermarke                  Seite oben  Abstand 0.56 mm
+  J15      Konsole UART                 Seite oben  Abstand 1.61 mm  !! STECKER
+
+Kante oben:
+  J16      HDMI A (n. b.)               Seite oben  Abstand 0.05 mm  !! STECKER
+  J17      USB-A Host                   Seite oben  Abstand 0.05 mm  !! STECKER
+  C48      22u6                         Seite unten Abstand 0.50 mm
+  C49      22u6                         Seite unten Abstand 0.50 mm
+  FID2     Passermarke                  Seite oben  Abstand 1.25 mm
+  J13      5V Display                   Seite oben  Abstand 1.71 mm  !! STECKER
+
+Kante unten:
+  H3       Befestigung T113-Platz (M3)  Seite oben  Abstand RAGT ÜBER
+  H4       Befestigung T113-Platz (M3)  Seite oben  Abstand RAGT ÜBER
+  J11      RS485 A/B/GND                Seite oben  Abstand RAGT ÜBER  !! STECKER
+  FID3     Passermarke                  Seite oben  Abstand 0.25 mm
+  TP1      GND                          Seite oben  Abstand 0.45 mm
+  TP3      5V                           Seite oben  Abstand 0.45 mm
+  TP4      3V3                          Seite oben  Abstand 0.45 mm
+  TP5      RUN                          Seite oben  Abstand 0.45 mm
+  TP6      BOOT                         Seite oben  Abstand 0.45 mm
+  TP7      PWR                          Seite oben  Abstand 0.45 mm
+  R39      470                          Seite oben  Abstand 0.56 mm
+  R40      470                          Seite oben  Abstand 0.56 mm
+  R41      1k                           Seite oben  Abstand 0.56 mm
+  R42      1k                           Seite oben  Abstand 0.56 mm
+  U5       INA226                       Seite unten Abstand 0.75 mm
+  C25      100n                         Seite unten Abstand 0.81 mm
+  JP_485_TERM 485 120R                     Seite oben  Abstand 1.56 mm
+  R24      10m                          Seite unten Abstand 1.78 mm
+  C19      22u25                        Seite unten Abstand 1.81 mm
+  C20      22u25                        Seite unten Abstand 1.81 mm
+  C21      22u25                        Seite unten Abstand 1.81 mm
+  C18      10u                          Seite unten Abstand 2.01 mm
+  C22      100n                         Seite unten Abstand 2.41 mm
+  FID1     Passermarke                  Seite oben  Abstand 2.85 mm
+  FID4     Passermarke                  Seite unten Abstand 2.85 mm
+  D11      LED 0805 grün                Seite oben  Abstand 2.96 mm
+  D12      LED 0805 grün                Seite oben  Abstand 2.96 mm
+  D13      LED 0805 grün                Seite oben  Abstand 2.96 mm
+  D14      LED 0805 gelb                Seite oben  Abstand 2.96 mm
+
+Kein Bauteil zu nah an einer Rand-Kante. ✓

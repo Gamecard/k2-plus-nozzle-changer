@@ -1,0 +1,86 @@
+Prüfung Nutzen k2-cm5-traeger-nutzen.kicad_pcb (K2-CM5-Träger Alpha 2, Einzelplatine 90 × 72.6 mm)
+
+1 Kontur
+  ✓ Edge.Cuts geschlossen: True
+  ✓ 1 Außenkontur mit 6 Fräsausschnitten (erwartet 6)
+  ✓ Nutzen 105.00 × 87.60 mm, Soll 105 × 87.6
+  ✓ beide Richtungen ≥ 70 mm (JLC-SMT ohne eigene Ränder): 87.60 mm
+  ✓ Rahmen 5.5 / 5.5 mm (JLC ≥ 5 mm)
+
+2 Frässchlitz (Strahl von der Platinenkante nach außen bis zum Rahmen)
+  ✓ Schlitzbreite an 499 Messstellen 2.000…2.005 mm (Soll 2)
+
+3 Haltestege und Mausbisse
+  | Steg | Kante, Mitte | Breite Kante / Schlitzmitte | Mausbisse | Loch–Kontur | Kupfer–Loch | nächster Stecker | nächster MLCC ≥ 0805 | nächstes Bauteil |
+  |---|---|---|---|---|---|---|---|---|
+  | Steg_O1 | oben 3 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J17 8.67 mm | C48 19.48 mm | D20 14.15 mm |
+  ✓ Steg_O1: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm
+  ✓ Steg_O1: Mausbisse Ø 0.50 mm (0,5–0,8), Abstand zwischen den Löchern 0.30 mm (0,2–0,3)
+  ✓ Steg_O1: alle Löcher innerhalb der Platinenkontur (+0.000 mm)
+  ✓ Steg_O1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm)
+  ✓ Steg_O1: Stecker J17 8.67 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_O1: Bauteil D20 14.15 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_O1: MLCC≥0805 C48 19.48 mm vom Steg (Grenze 3.5 mm)
+  | Steg_O2 | oben 74.6 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J13 5.34 mm | C41 5.79 mm | R53 6.56 mm |
+  ✓ Steg_O2: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm
+  ✓ Steg_O2: Mausbisse Ø 0.50 mm (0,5–0,8), Abstand zwischen den Löchern 0.30 mm (0,2–0,3)
+  ✓ Steg_O2: alle Löcher innerhalb der Platinenkontur (+0.000 mm)
+  ✓ Steg_O2: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm)
+  ✓ Steg_O2: Stecker J13 5.34 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_O2: Bauteil R53 6.56 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_O2: MLCC≥0805 C41 5.79 mm vom Steg (Grenze 3.5 mm)
+  | Steg_L1 | links -8 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J7 6.71 mm | C7 11.27 mm | R50 11.32 mm |
+  ✓ Steg_L1: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm
+  ✓ Steg_L1: Mausbisse Ø 0.50 mm (0,5–0,8), Abstand zwischen den Löchern 0.30 mm (0,2–0,3)
+  ✓ Steg_L1: alle Löcher innerhalb der Platinenkontur (+0.000 mm)
+  ✓ Steg_L1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm)
+  ✓ Steg_L1: Stecker J7 6.71 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_L1: Bauteil R50 11.32 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_L1: MLCC≥0805 C7 11.27 mm vom Steg (Grenze 3.5 mm)
+  | Steg_R1 | rechts 13 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J12 5.53 mm | C36 17.63 mm | R55 13.40 mm |
+  ✓ Steg_R1: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm
+  ✓ Steg_R1: Mausbisse Ø 0.50 mm (0,5–0,8), Abstand zwischen den Löchern 0.30 mm (0,2–0,3)
+  ✓ Steg_R1: alle Löcher innerhalb der Platinenkontur (+0.000 mm)
+  ✓ Steg_R1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm)
+  ✓ Steg_R1: Stecker J12 5.53 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_R1: Bauteil R55 13.40 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_R1: MLCC≥0805 C36 17.63 mm vom Steg (Grenze 3.5 mm)
+  | Steg_U1 | unten -4 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J1 8.16 mm | C28 13.24 mm | R36 10.17 mm |
+  ✓ Steg_U1: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm
+  ✓ Steg_U1: Mausbisse Ø 0.50 mm (0,5–0,8), Abstand zwischen den Löchern 0.30 mm (0,2–0,3)
+  ✓ Steg_U1: alle Löcher innerhalb der Platinenkontur (+0.000 mm)
+  ✓ Steg_U1: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm)
+  ✓ Steg_U1: Stecker J1 8.16 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_U1: Bauteil R36 10.17 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_U1: MLCC≥0805 C28 13.24 mm vom Steg (Grenze 3.5 mm)
+  | Steg_U2 | unten 70 | 6.60 / 4.99 mm | 9 × Ø 0.50, Steg 0.30 mm | +0.000 mm | 0.51 mm | J2 7.04 mm | C18 9.09 mm | TP1 6.72 mm |
+  ✓ Steg_U2: Stegbreite in Schlitzmitte 4.99 mm ≥ 5 mm
+  ✓ Steg_U2: Mausbisse Ø 0.50 mm (0,5–0,8), Abstand zwischen den Löchern 0.30 mm (0,2–0,3)
+  ✓ Steg_U2: alle Löcher innerhalb der Platinenkontur (+0.000 mm)
+  ✓ Steg_U2: Kupfer ≥ 0,2 mm vom Mausbiss-Loch (0.51 mm)
+  ✓ Steg_U2: Stecker J2 7.04 mm vom Steg (Grenze 5 mm)
+  ✓ Steg_U2: Bauteil TP1 6.72 mm vom Steg (Grenze 1 mm)
+  ✓ Steg_U2: MLCC≥0805 C18 9.09 mm vom Steg (Grenze 3.5 mm)
+
+4 Passermarken und Werkzeuglöcher (Marke Ø 1 mm / Öffnung Ø 2 mm, Mitte 3,85 mm vom Rand; Loch Ø 2 mm)
+  ✓ NFID1 (-13.65/20.00): 3.85 mm vom Nutzenrand, 3.65 mm von der Platine
+  ✓ NFID2 (30.00/59.75): 3.85 mm vom Nutzenrand, 3.65 mm von der Platine
+  ✓ NFID3 (83.65/38.00): 3.85 mm vom Nutzenrand, 3.65 mm von der Platine
+  ✓ NFID4 (-13.65/30.00): 3.85 mm vom Nutzenrand, 3.65 mm von der Platine
+  ✓ NFID5 (50.00/-20.15): 3.85 mm vom Nutzenrand, 3.65 mm von der Platine
+  ✓ NFID6 (83.65/46.00): 3.85 mm vom Nutzenrand, 3.65 mm von der Platine
+  ✓ WL1 (-13.65/-20.15): 3.85 mm vom Nutzenrand, 5.99 mm von der Platine
+  ✓ WL2 (83.65/-20.15): 3.85 mm vom Nutzenrand, 5.99 mm von der Platine
+  ✓ WL3 (-13.65/59.75): 3.85 mm vom Nutzenrand, 5.99 mm von der Platine
+
+5 Bauteile
+  ✓ J1 ragt 0.29 mm über die Platinenkante in den Schlitz (erlaubt: True)
+  ✓ J11 ragt 0.09 mm über die Platinenkante in den Schlitz (erlaubt: True)
+  ✓ J7 ragt 0.14 mm über die Platinenkante in den Schlitz (erlaubt: True)
+  ✓ alle übrigen Bauteile innerhalb der Platine (163 geprüft)
+  ✓ kleinster Abstand Bauteil (Courtyard) – Nutzenaußenkante 7.21 mm (≥ 3 mm)
+
+6 Bestückungsdatei des Nutzens gegen die der Einzelplatine
+  ✓ 146 Zeilen, identisch zur Einzelplatine (gleiche Koordinaten wie die Nutzen-Gerber); Abweichungen: []
+
+ERGEBNIS: alle Prüfungen bestanden ✓

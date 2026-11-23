@@ -1,0 +1,2 @@
+607629298726fa5bb58d846c2a1d06916c42ed045e2d440afd3682d9ecd9ecb2  k2-cm5-traeger.kicad_pcb
+f0b9512013ff547152a7b6526deb3f762f53056290cc548062cf09e5b92eb4c0  zwischen/bau/k2-cm5-traeger.dsn

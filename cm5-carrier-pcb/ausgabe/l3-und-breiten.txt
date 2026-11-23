@@ -1,0 +1,20 @@
+Wächter L3 (3,3-V-Lage) und Bahnbreiten:
+  Bahnen unter 0,15 mm (Netz | Lage | Breite | Länge):
+    CAN_INT          | B.Cu   | 0.112 mm |   2.23 mm
+    CC1_CM5          | B.Cu   | 0.120 mm |   6.76 mm
+    CC1_CM5          | F.Cu   | 0.120 mm |   7.10 mm
+    CC1_CM5          | In2.Cu | 0.120 mm |  29.69 mm
+    CON_RX_EXT       | F.Cu   | 0.112 mm |   1.43 mm
+    CON_RX_PUF       | B.Cu   | 0.112 mm |   1.31 mm
+    DISP_ILIM        | B.Cu   | 0.112 mm |   0.97 mm
+    HDMI1_CEC        | B.Cu   | 0.112 mm |   1.09 mm
+    PWR_FAIL_N       | B.Cu   | 0.120 mm |   1.76 mm
+    PWR_FAIL_N       | F.Cu   | 0.120 mm |   1.20 mm
+    PWR_FAIL_N       | In2.Cu | 0.120 mm |  56.66 mm
+    RS485_B          | B.Cu   | 0.120 mm |   1.43 mm
+    WANDLER_BOOT     | B.Cu   | 0.112 mm |   0.65 mm
+  Signalbahnen in L3: 208 Stücke, 99.8 mm (BR_5V, CC1_CM5, CC2_CM5, PWR_FAIL_N)
+  3,3-V-Fläche L3: 1 Flächenstück(e) mit 3,3-V-Anschlüssen (Soll 1)
+  schmalster 3,3-V-Kupfersteg neben einer L3-Signalbahn: 0.33 mm (Grenze 0.3 mm; gemessen bis 3 mm)
+  L4-Paare über Schlitzen von L3-Signalbahnen: keine
+  Hinweis – L4-Paare über festen Versorgungsbahnen in L3 (Schlitzkanten der Bezugsfläche, Bestand): OTG_DM über J10_VBUS/VIN24; OTG_DP über VIN24; TOUCH_DM über VIN24; TOUCH_DP über VIN24

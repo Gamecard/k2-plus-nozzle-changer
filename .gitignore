@@ -23,3 +23,8 @@ fp-info-cache
 *.orig
 *.log
 .~lock*
+
+# CM5-Trägerplatine: Zwischenstände, geladene Fremddaten, Router-Programm
+cm5-carrier-pcb/zwischen/
+cm5-carrier-pcb/k2_traeger.3dshapes/lcsc/
+cm5-carrier-pcb/werkzeuge/freerouting-*.jar

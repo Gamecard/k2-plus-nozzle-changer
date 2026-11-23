@@ -1,0 +1,94 @@
+{
+ "quelle": "Raspberry Pi CM5 IO Board, revision 2, KiCad-Designdaten (CM5IO.kicad_pcb, J16 = CAM/DISP 1); Gegenprobe CM4IOv5.kicad_pcb J16. Abgeleitet: Lage u jedes Kontakts quer zur Steckrichtung (mm, Buchsenmitte = 0, Vorzeichen nach Kontaktseite, siehe Generator j12_lage_pruefen) und Signalrolle.",
+ "kontaktseite": "unten",
+ "u_rolle": {
+  "1": [
+   -5.25,
+   "GND"
+  ],
+  "2": [
+   -4.75,
+   "D0_N"
+  ],
+  "3": [
+   -4.25,
+   "D0_P"
+  ],
+  "4": [
+   -3.75,
+   "GND"
+  ],
+  "5": [
+   -3.25,
+   "D1_N"
+  ],
+  "6": [
+   -2.75,
+   "D1_P"
+  ],
+  "7": [
+   -2.25,
+   "GND"
+  ],
+  "8": [
+   -1.75,
+   "C_N"
+  ],
+  "9": [
+   -1.25,
+   "C_P"
+  ],
+  "10": [
+   -0.75,
+   "GND"
+  ],
+  "11": [
+   -0.25,
+   "D2_N"
+  ],
+  "12": [
+   0.25,
+   "D2_P"
+  ],
+  "13": [
+   0.75,
+   "GND"
+  ],
+  "14": [
+   1.25,
+   "D3_N"
+  ],
+  "15": [
+   1.75,
+   "D3_P"
+  ],
+  "16": [
+   2.25,
+   "GND"
+  ],
+  "17": [
+   2.75,
+   "Pin17"
+  ],
+  "18": [
+   3.25,
+   "Pin18"
+  ],
+  "19": [
+   3.75,
+   "GND"
+  ],
+  "20": [
+   4.25,
+   "SCL"
+  ],
+  "21": [
+   4.75,
+   "SDA"
+  ],
+  "22": [
+   5.25,
+   "3V3"
+  ]
+ }
+}

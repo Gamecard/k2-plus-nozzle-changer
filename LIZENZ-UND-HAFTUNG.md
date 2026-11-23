@@ -1,4 +1,4 @@
-# Lizenz und Haftung – K2 Plus Nozzle Changer (Düsenwechsler, Kopfplatine P19)
+# Lizenz und Haftung – K2 Plus Nozzle Changer (Düsenwechsler, Kopfplatine P19, CM5-Trägerplatine)
 
 > **ALPHA – NUR FÜR TESTZWECKE – NUTZUNG AUF EIGENE GEFAHR**
 
@@ -7,6 +7,9 @@ Gilt für dieses Repository ab dem Stand vom 22.11.2026:
 - `toolhead-pcb/` – Kopfplatine P19, Fassung 10: Schaltplan, Layout, Gerber- und Fertigungsdaten, Stückliste,
   Bestückungsdaten, Bilder und Beschreibungen (Hardware-Entwurf) sowie der Programmcode, aus dem die Platine erzeugt
   wird (Software).
+- `cm5-carrier-pcb/` – Trägerplatine K2-CM5-Träger Alpha 2: Schaltplan, Layout, Gerber- und Fertigungsdaten, Stückliste,
+  Bestückungsdaten, Bilder und Beschreibungen (Hardware-Entwurf) sowie der Programmcode, aus dem die Platine erzeugt wird
+  (Software).
 - `prototyp-19v2/` – Mechanik des Prototyps 19 v2: CAD-Modell, STEP- und STL-Dateien, Bilder und Beschreibung, soweit es
   eigene Teile dieses Projekts sind.
 
@@ -15,7 +18,7 @@ Gilt für dieses Repository ab dem Stand vom 22.11.2026:
 | Teil | Dateien | Lizenz |
 |---|---|---|
 | **Hardware-Entwurf** | KiCad-Dateien, Gerber- und Fertigungsdaten, Stücklisten, CAD-Modell, STEP/STL, Bilder, Beschreibungen, Datendateien des Generators (`*.json`, `*.txt`) | CERN-OHL-W v2, Text in [`LICENSE`](LICENSE) |
-| **Software** | Programmcode in `toolhead-pcb/generator/`, `toolhead-pcb/werkzeuge/`, `toolhead-pcb/bauen.sh` und die Klipper-Beispielkonfiguration in `toolhead-pcb/klipper/` – jede dieser Dateien trägt die Zeile `SPDX-License-Identifier: GPL-3.0-or-later` | GNU General Public License Version 3 oder später, Text in [`LICENSE-GPL-3.0.txt`](LICENSE-GPL-3.0.txt) |
+| **Software** | Programmcode in `toolhead-pcb/` und `cm5-carrier-pcb/` (jeweils `generator/`, `werkzeuge/`, `bauen.sh`, weitere Skripte) und die Klipper-Beispielkonfiguration in `toolhead-pcb/klipper/` – jede dieser Dateien trägt die Zeile `SPDX-License-Identifier: GPL-3.0-or-later` | GNU General Public License Version 3 oder später, Text in [`LICENSE-GPL-3.0.txt`](LICENSE-GPL-3.0.txt) |
 
 Die mit dem Programmcode **erzeugten** Dateien (Schaltplan, Platine, Fertigungsdaten) sind Hardware-Entwurf und stehen
 unter der CERN-OHL-W v2, nicht unter der GPL.

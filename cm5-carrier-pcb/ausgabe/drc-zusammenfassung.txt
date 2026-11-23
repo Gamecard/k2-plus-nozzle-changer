@@ -1,0 +1,4 @@
+DRC: 1 Einträge (Fehler 0, Warnungen 1)
+    warning  lib_footprint_mismatch              1
+Nicht verbunden: 0 Einträge (Fehler 0, Warnungen 0)
+Schaltplan-Parität: 0 Einträge (Fehler 0, Warnungen 0)

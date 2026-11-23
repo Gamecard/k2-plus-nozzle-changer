@@ -1,0 +1,25 @@
+Wächter J12-Lage: jedes Pad quer zur Steckrichtung gegen J16 (CAM/DISP 1) des CM5-IO-Boards (Raspberry-Pi-Designdaten Rev. 2; CM4-IO J16 identisch). Footprint FPC_0.5K-AS-22PWB_1x22_P0.5mm_Kontakte_oben_Horizontal, Kontakte oben, Oberseite, Öffnung Richtung (+1.00/+0.00) = Kante C
+  Selbsttest an Alpha 1 (FH12, Kontakte unten): 16 von 22 Kontakten als falsch erkannt (Prüfung wirksam)
+    Pad  1 GND          u =  -5.25 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad  2 DSI1_D0_N    u =  -4.75 mm  Rolle D0_N    Referenz an dieser Stelle: D0_N   OK
+    Pad  3 DSI1_D0_P    u =  -4.25 mm  Rolle D0_P    Referenz an dieser Stelle: D0_P   OK
+    Pad  4 GND          u =  -3.75 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad  5 DSI1_D1_N    u =  -3.25 mm  Rolle D1_N    Referenz an dieser Stelle: D1_N   OK
+    Pad  6 DSI1_D1_P    u =  -2.75 mm  Rolle D1_P    Referenz an dieser Stelle: D1_P   OK
+    Pad  7 GND          u =  -2.25 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad  8 DSI1_C_N     u =  -1.75 mm  Rolle C_N     Referenz an dieser Stelle: C_N    OK
+    Pad  9 DSI1_C_P     u =  -1.25 mm  Rolle C_P     Referenz an dieser Stelle: C_P    OK
+    Pad 10 GND          u =  -0.75 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad 11 DSI1_D2_N    u =  -0.25 mm  Rolle D2_N    Referenz an dieser Stelle: D2_N   OK
+    Pad 12 DSI1_D2_P    u =  +0.25 mm  Rolle D2_P    Referenz an dieser Stelle: D2_P   OK
+    Pad 13 GND          u =  +0.75 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad 14 DSI1_D3_N    u =  +1.25 mm  Rolle D3_N    Referenz an dieser Stelle: D3_N   OK
+    Pad 15 DSI1_D3_P    u =  +1.75 mm  Rolle D3_P    Referenz an dieser Stelle: D3_P   OK
+    Pad 16 GND          u =  +2.25 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad 17 CAM_GPIO0    u =  +2.75 mm  Rolle Pin17   Referenz an dieser Stelle: Pin17  OK
+    Pad 18 CAM_GPIO1    u =  +3.25 mm  Rolle Pin18   Referenz an dieser Stelle: Pin18  OK
+    Pad 19 GND          u =  +3.75 mm  Rolle GND     Referenz an dieser Stelle: GND    OK
+    Pad 20 DSI_SCL      u =  +4.25 mm  Rolle SCL     Referenz an dieser Stelle: SCL    OK
+    Pad 21 DSI_SDA      u =  +4.75 mm  Rolle SDA     Referenz an dieser Stelle: SDA    OK
+    Pad 22 DSI_3V3      u =  +5.25 mm  Rolle 3V3     Referenz an dieser Stelle: 3V3    OK
+ERGEBNIS: alle 22 Kontakte wie die Referenz ✓
