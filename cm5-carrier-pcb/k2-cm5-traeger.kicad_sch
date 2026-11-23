@@ -1,7 +1,7 @@
 (kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0")
 (uuid "d1d0cc9e-814a-54a4-9a0a-963a4e09d7e2")
 (paper "A0")
-(title_block (title "K2-CM5-Träger Alpha 2") (date "2026-11-22") (rev "Alpha 2") (comment 1 "ALPHA · NUR TEST · EIGENE GEFAHR") (comment 2 "J1: Pin n = Breakout n, GND nur 18/33; BR_5V nie an CM5-5V") (comment 3 "CM5 auf 2x DF40C (1,5 mm); 24 V nur J7; 4 Lagen JLC04161H-7628") (comment 4 "Lizenz CERN-OHL-W v2 · github.com/Gamecard/k2-plus-nozzle-changer"))
+(title_block (title "K2-CM5-Träger Alpha 2") (date "2026-11-22") (rev "Alpha 2") (comment 1 "Trägerplatine für Raspberry Pi Compute Module 5") (comment 2 "J1: Pin n = Breakout n, GND nur 18/33; BR_5V nie an CM5-5V") (comment 3 "CM5 auf 2x DF40C (1,5 mm); 24 V nur J7; 4 Lagen JLC04161H-7628") (comment 4 "Lizenz CERN-OHL-W v2 · github.com/Gamecard/k2-plus-nozzle-changer"))
 (lib_symbols
 (symbol "Connector_Generic:Conn_01x50"
 		(pin_names
@@ -14127,7 +14127,6 @@
 (text "Befestigung, Passermarken" (exclude_from_sim no) (at 849.71 392.41 0) (effects (font (size 2.54 2.54) (bold yes)) (justify left bottom)) (uuid "58de0898-cf27-528c-8a27-013d9dea9cc6"))
 (text "ERC-Markierungen" (exclude_from_sim no) (at 936.07 392.41 0) (effects (font (size 2.54 2.54) (bold yes)) (justify left bottom)) (uuid "0dd77be1-f2ec-5d32-bf08-215fdc682cf5"))
 (text "K2-CM5-Träger Alpha 2 – 22.11.2026" (exclude_from_sim no) (at 25.4 20.32 0) (effects (font (size 5.08 5.08) (bold yes)) (justify left bottom)) (uuid "72b2a52a-90aa-5138-b14f-720c6244e9b9"))
-(text "ALPHA – NUR FÜR TESTZWECKE – NUTZUNG AUF EIGENE GEFAHR" (exclude_from_sim no) (at 25.4 30.48 0) (effects (font (size 3.0 3.0) (bold yes)) (justify left bottom)) (uuid "d7106760-ac5c-564a-b9cf-40026601b030"))
 (text "Eigene Trägerplatine für das CM5 am T113-Platz im K2 Plus (Weg B, siehe KONZEPT.md). Kabel: Original-Flachkabel (J1) + 24 V (J7). Kein USB-RS485-Adapter, kein IO-Board, kein Pi-Netzteil.\nJ1: Pin n = Breakout n (CON2 = 51 − n), Pin 1 (Ethernet) zur Kante D, Pins 45–50 (Drucker-5V) zur Kante B. GND nur an 18/33 (spiegelsicher) über PTC F3. BR_5V NIE an CM5-5V.\nCM5-5V nur vom eigenen Wandler (bzw. USB-C über den Power-Mux U8). 24 V nur an J7 und den Leistungsteilen (Toolhead-24 V direkt vom Netzteil)." (exclude_from_sim no) (at 25.4 38.1 0) (effects (font (size 1.8 1.8)) (justify left top)) (uuid "046a8143-506d-514c-8897-961db0e52a9f"))
 (symbol (lib_id "Connector_Generic:Conn_01x50") (at 180.34 134.62 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "deba4aa1-ccbe-58b1-b269-32862a4ad49a")
 (property "Reference" "J1" (at 180.34 71.12 0) (effects (font (size 1.27 1.27))))

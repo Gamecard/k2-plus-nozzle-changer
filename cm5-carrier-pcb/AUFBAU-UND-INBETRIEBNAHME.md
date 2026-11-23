@@ -13,8 +13,8 @@ sondern in [`pi-host/traeger-alpha1/README-traeger-alpha1.md`](../../pi-host/tra
 (im Folgenden **Software-README**). An den passenden
 Stellen steht, welcher Schritt dort an der Reihe ist.
 
-> Stand: Die Anleitung wurde für Alpha 1 geschrieben; Alpha 2 ist noch nicht gefertigt und nicht erprobt. Nutzung auf
-> eigene Gefahr. Lizenz und Haftungsausschluss: [`../LIZENZ-UND-HAFTUNG.md`](../LIZENZ-UND-HAFTUNG.md). Bekannte Kompromisse und Risiken:
+> Stand: Die Anleitung wurde für Alpha 1 geschrieben; Alpha 2 ist noch nicht gefertigt und nicht erprobt. Lizenz und
+> Haftungsausschluss: [`../LIZENZ-UND-HAFTUNG.md`](../LIZENZ-UND-HAFTUNG.md). Bekannte Kompromisse und Risiken:
 > [`KOMPROMISSE-UND-OFFENE-PUNKTE.md`](KOMPROMISSE-UND-OFFENE-PUNKTE.md).
 
 ## 0. Überblick

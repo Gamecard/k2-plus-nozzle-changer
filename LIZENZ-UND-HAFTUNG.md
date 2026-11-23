@@ -1,7 +1,5 @@
 # Lizenz und Haftung – K2 Plus Nozzle Changer (Düsenwechsler, Kopfplatine P19, CM5-Trägerplatine)
 
-> **ALPHA – NUR FÜR TESTZWECKE – NUTZUNG AUF EIGENE GEFAHR**
-
 Gilt für dieses Repository ab dem Stand vom 22.11.2026:
 
 - `toolhead-pcb/` – Kopfplatine P19, Fassung 10: Schaltplan, Layout, Gerber- und Fertigungsdaten, Stückliste,
@@ -96,26 +94,25 @@ offenlegen.
 
 ## Status
 
-Platine und Mechanik sind **Alpha-Stände**: Nichts davon ist gefertigt oder am Gerät erprobt. Die Entwürfe können Fehler
-enthalten und sind ausschließlich zum Testen und Weiterentwickeln gedacht. Es gibt keine Zusage, dass danach gefertigte
+Platinen und Mechanik sind **Alpha-Stände**: Die Kopfplatine, die Trägerplatine Alpha 2 und die Mechanik sind noch nicht
+gefertigt und nicht am Gerät erprobt. Die Entwürfe können Fehler enthalten. Es gibt keine Zusage, dass danach gefertigte
 Teile funktionieren, passen oder sicher sind.
 
 ## Haftungsausschluss
 
-Die Nutzung erfolgt **auf eigene Gefahr**. Die Platine arbeitet mit 24–48 V, hohen Strömen, Heiz- und Motorlasten und direkt
+Die Platinen arbeiten mit 24–48 V, hohen Strömen, Heiz- und Motorlasten und direkt
 mit der Elektronik eines 3D-Druckers. Fehler können den Drucker, angeschlossene Geräte oder Gebäude beschädigen und Brände
 verursachen.
 
 Die Lizenz schließt Gewährleistung und Haftung aus (Abschnitt 6 der CERN-OHL-W v2). Ergänzend gilt: Eine Haftung der
-Autoren für Schäden jeder Art, die aus Nachbau, Einbau oder Betrieb entstehen, ist ausgeschlossen, **soweit gesetzlich
-zulässig**. Unberührt bleibt die Haftung für Vorsatz und grobe Fahrlässigkeit sowie für Schäden aus der Verletzung von Leben,
+Autoren für Schäden jeder Art, die aus Nachbau, Einbau oder Betrieb entstehen, ist ausgeschlossen. Unberührt bleibt die Haftung für Vorsatz und grobe Fahrlässigkeit sowie für Schäden aus der Verletzung von Leben,
 Körper oder Gesundheit, soweit sie gesetzlich nicht ausgeschlossen werden kann. Es besteht kein Support-Anspruch. Der Umbau
 kann Gewährleistung und Garantie gegenüber dem Hersteller des Druckers beeinträchtigen.
 
 ---
 
-**English summary:** ALPHA hardware designs (toolhead PCB and mechanics) for testing only. Hardware design files are
+**English summary:** Hardware designs (toolhead PCB, CM5 carrier board and mechanics), not yet built or tested. Hardware design files are
 licensed under CERN-OHL-W v2 (weakly reciprocal), see `LICENSE`; program code (generator, tools, build script, Klipper
 example configuration) under GPL-3.0-or-later, see `LICENSE-GPL-3.0.txt`.
-Use at your own risk; no warranty; liability excluded to the extent permitted by law. KiCad library parts, manufacturer data
+No warranty; liability excluded. KiCad library parts, manufacturer data
 and third-party printer models are not covered by this licence.

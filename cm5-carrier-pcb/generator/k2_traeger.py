@@ -110,8 +110,7 @@ J12_ROLLE = {"GND": "GND", "CAM_GPIO0": "Pin17", "CAM_GPIO1": "Pin18", "DSI_SCL"
 # Veröffentlichung: Lizenz und Quellort an EINER Stelle (Bestückungsdruck Unterseite, Schaltplan, Nutzenrahmen)
 LIZENZ_HW = "CERN-OHL-W v2"                       # Hardware; Programmcode: GPL-3.0-or-later (siehe README)
 QUELLORT = "github.com/Gamecard/k2-plus-nozzle-changer"
-WARNUNG_LANG = "ALPHA – NUR FÜR TESTZWECKE – NUTZUNG AUF EIGENE GEFAHR"
-WARNUNG_KURZ = "ALPHA · NUR TEST · EIGENE GEFAHR"
+SCHRIFTFELD_ZUSATZ = "Trägerplatine für Raspberry Pi Compute Module 5"
 URSPRUNG = (50.0, 40.0)      # Versatz in der KiCad-Datei (x = −10 liegt dann bei 40 mm)
 
 # =============================================================================
@@ -1315,7 +1314,6 @@ def erzeuge_schaltplan(T):
     for txt, (x, y) in titel:
         sp.text(txt, (x, y), size=2.54, bold=True)
     sp.text(f"{TITEL} – {DATUM_DE}", (25.4, 20.32), size=5.08, bold=True)
-    sp.text(WARNUNG_LANG, (25.4, 30.48), size=3.0, bold=True)
     sp.text("Eigene Trägerplatine für das CM5 am T113-Platz im K2 Plus (Weg B, siehe KONZEPT.md). Kabel: Original-Flachkabel "
             "(J1) + 24 V (J7). Kein USB-RS485-Adapter, kein IO-Board, kein Pi-Netzteil.\n"
             "J1: Pin n = Breakout n (CON2 = 51 − n), Pin 1 (Ethernet) zur Kante D, Pins 45–50 (Drucker-5V) zur Kante B. "
@@ -1325,7 +1323,7 @@ def erzeuge_schaltplan(T):
     teile = [sym.raw for sym in syms.values()]
     sym_inst = [symbol_instanz(t, syms[t.lib]) for t in T]
     tb = (f'(title_block (title {q(TITEL)}) (date {q(DATUM)}) (rev {q(STAND)}) '
-          f'(comment 1 {q(WARNUNG_KURZ)}) '
+          f'(comment 1 {q(SCHRIFTFELD_ZUSATZ)}) '
           f'(comment 2 "J1: Pin n = Breakout n, GND nur 18/33; BR_5V nie an CM5-5V") '
           f'(comment 3 "CM5 auf 2x DF40C (1,5 mm); 24 V nur J7; 4 Lagen JLC04161H-7628") '
           f'(comment 4 {q("Lizenz " + LIZENZ_HW + " · " + QUELLORT)}))')
@@ -3977,10 +3975,8 @@ SIEBDRUCK_UNTEN = []
 
 
 def siebdruck_texte(pp):
-    """Siebdruck (oben/unten). Warnhinweis ALPHA groß unter dem CM5 (bei abgenommenem Modul lesbar) und kurz unten."""
+    """Siebdruck (oben/unten): Name, Stand, Lizenz und Quellort unter dem CM5 (bei abgenommenem Modul lesbar) und kurz unten."""
     o = [(TITEL, 36.0, 32.6, 1.6, 0, None),
-         ("ALPHA – NUR FÜR TESTZWECKE", 36.0, 35.6, 1.2, 0, None),
-         ("NUTZUNG AUF EIGENE GEFAHR", 36.0, 38.0, 1.2, 0, None),
          (f"CM5 · {DATUM_DE}", 36.0, 24.5, 1.0, 0, None),
          (f"Lizenz {LIZENZ_HW}", 36.0, 27.4, 0.8, 0, None),            # Veröffentlichung (Text oben bei LIZENZ_HW)
          (QUELLORT, 36.0, 29.1, 0.8, 0, None),
@@ -4024,8 +4020,7 @@ def siebdruck_texte(pp):
               pp("J15", "2")[0] + 1.72, pp("J15", "2")[1], 0.8, 90, None))
     # Unterseite: zwei freie Felder (zwischen D3 und der UART-Gruppe, links oben neben H1)
     u = [(f"{TITEL} · Unterseite", 34.0, 11.2, 0.8, 0, None),
-         (f"ALPHA · NUR TEST · {DATUM_DE}", 34.0, 12.9, 0.8, 0, None),
-         ("NUTZUNG AUF EIGENE GEFAHR", 34.0, 14.6, 0.8, 0, None),
+         (f"Stand {DATUM_DE}", 34.0, 12.9, 0.8, 0, None),
 
          ("JP2/JP3 zu = RS485-Bias", 34.0, 16.3, 0.8, 0, None),
          ("JP5 zu = 5 V über USB-C", 29.8, 9.2, 0.8, 0, None),
@@ -4066,7 +4061,7 @@ def platine(netzliste):
     tb.SetTitle(TITEL)
     tb.SetDate(DATUM)
     tb.SetRevision(STAND)
-    tb.SetComment(0, WARNUNG_KURZ)
+    tb.SetComment(0, SCHRIFTFELD_ZUSATZ)
     tb.SetComment(3, f"Lizenz {LIZENZ_HW} · {QUELLORT}")
     tb.SetComment(1, "4 Lagen JLC04161H-7628: L1 Signal, L2 GND, L3 5,2 V/3,3 V + GND, L4 Signal; "
                      "Impedanz USB 90 Ω / Ethernet + DSI 100 Ω")
@@ -6113,14 +6108,10 @@ def pruefe_siebdruck(ausgabe=None, mindest=0.3, pad_mindest=0.15):
             fehler.append(f"Text ragt an/über die Platinenkante: {t[1]}")
         if t[4] < 0.8 - 1e-6:
             fehler.append(f"Text kleiner als 0,8 mm: {t[1]}")
-    warn = [t for t in texte if "ALPHA" in t[1] or "EIGENE GEFAHR" in t[1]]
-    if not any(t[0] == pcbnew.F_SilkS for t in warn):
-        fehler.append("Warnhinweis ALPHA fehlt auf der Oberseite")
     paare.sort()
     pad_paare.sort()
     z = [f"Siebdruck-Wächter: {len(texte)} sichtbare Texte, {len(paare)} Paare (Mindestabstand {mindest} mm, "
-         f"{pad_mindest} mm zu Lötstopp-Öffnungen, Schrifthöhe ≥ 0,8 mm). Warnhinweis: "
-         f"{', '.join(t[1] for t in warn)}", "Kleinste Abstände zwischen Texten:"]
+         f"{pad_mindest} mm zu Lötstopp-Öffnungen, Schrifthöhe ≥ 0,8 mm).", "Kleinste Abstände zwischen Texten:"]
     z += [f"  {d:5.2f} mm ({s}) {a} ↔ {c}" for d, s, a, c in paare[:5]]
     z.append("Kleinste Abstände Text ↔ Lötstopp-Öffnung:")
     z += [f"  {d:5.2f} mm ({s}) {a} ↔ {c}" for d, s, a, c in pad_paare[:3]]

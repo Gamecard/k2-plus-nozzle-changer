@@ -1,5 +1,5 @@
 ** Drc report for k2-cm5-traeger-nutzen.kicad_pcb **
-** Created on 2026-11-23T13:51:28 **
+** Created on 2026-11-23T14:10:57 **
 ** Report includes: Errors **
 
 ** Found 0 DRC violations **

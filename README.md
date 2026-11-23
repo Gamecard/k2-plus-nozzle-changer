@@ -109,7 +109,7 @@ fertig entworfen und geprüft, aber noch nicht gefertigt. Einzelheiten: [`cm5-ca
 Der Hardware-Entwurf steht unter der **CERN Open Hardware Licence Version 2 – Weakly Reciprocal (CERN-OHL-W v2)**, der
 Programmcode (Generator, Werkzeuge, Bauskript, Klipper-Beispiel) unter der **GNU General Public License Version 3 oder
 später**. Die vollständigen Lizenztexte enthalten [`LICENSE`](LICENSE) und [`LICENSE-GPL-3.0.txt`](LICENSE-GPL-3.0.txt); Kurzfassung, Ausnahmen (KiCad-Bibliotheken, Herstellerdaten, fremde Modelle) und den
-Haftungsausschluss enthält [`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md). Nutzung auf eigene Gefahr: Die Platine arbeitet mit
+Haftungsausschluss enthält [`LIZENZ-UND-HAFTUNG.md`](LIZENZ-UND-HAFTUNG.md). Hinweis: Die Platinen arbeiten mit
 bis zu 48 V, Motor- und Heizlasten.
 
 ## Hinweis zu Marken

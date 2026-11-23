@@ -4,7 +4,7 @@ Stand 23.11.2026. Anleitung für Leiterplatte **und** Bestückung. Lagerbeständ
 sich – am Bestelltag gegenprüfen. Die Werte für das Formular erzeugt der Generator zusätzlich in
 `ausgabe/nutzen/bestellangaben.md`.
 
-Stand: Entwurf, noch nicht gefertigt und nicht erprobt; Nutzung auf eigene Gefahr. Lizenz und Haftung: [`../LIZENZ-UND-HAFTUNG.md`](../LIZENZ-UND-HAFTUNG.md).
+Stand: Entwurf, noch nicht gefertigt und nicht erprobt. Lizenz und Haftung: [`../LIZENZ-UND-HAFTUNG.md`](../LIZENZ-UND-HAFTUNG.md).
 
 **Wichtigster Unterschied zu Alpha 1:** Bestellt wird **der fertige Nutzen** (Platine im Rahmen mit gefrästem Schlitz
 und Mausbiss-Stegen, „Panel by Customer“). *Nutzen* heißt der Fertigungsrahmen, in dem die Platine an wenigen schmalen
