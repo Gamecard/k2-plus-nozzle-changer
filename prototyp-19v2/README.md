@@ -62,6 +62,24 @@ unten die Düse der Patrone.*
 die Adern des Patronenkabels (schwarz) und die daran verlöteten Hotend-Leitungen (rot), seitlich die Kühlrippen. Auf der
 Rückseite, die am Kopf anliegt, sitzen die beiden Druckscheiben für die Kugeln der 3-2-1-Kupplung.*
 
+## Technische Zeichnungen
+
+Fertigungszeichnungen liegen in [`zeichnungen/`](zeichnungen/). Erstellt sind sie mit SolidCraft, jeweils mit der Quelldatei
+(`.sc`) und dem Einzelteil als STEP.
+
+| Teil | Zeichnung | Inhalt |
+|---|---|---|
+| Patrone (EN AW-7075 T6, schwarz eloxiert) | [`Patrone_7075_Zeichnung.pdf`](zeichnungen/Patrone_7075_Zeichnung.pdf) ([PNG](zeichnungen/Patrone_7075_Zeichnung.png)) | DIN A2, Maßstab 2:1, Projektionsmethode 1; sechs Ansichten, Schnitte A–A, B–B, C–C, Einzelheit T-Leiste 5:1, Iso-Ansicht |
+
+Die Zeichnung legt die Hauptmaße, alle Bohrungen und Gewinde sowie die Passmaße der Kupplung zum Kopf fest: 2 × Ø4 H7 für
+Rund- und Rautenstift (Abstand 46 ±0,02), die Sitze der Druckscheiben (20 ±0,02 / 9 ±0,02, Tiefe 1 ±0,02) und die
+Druckstiftkanäle. Die übrige Geometrie (Kontur der Riegelkammer, Kabelnut im Detail, Freischnitte) wird nach dem 3D-Modell
+gefertigt; das steht so in den technischen Anforderungen auf dem Blatt. Die Toleranzen der Kupplung entsprechen der
+Annahme ±0,02 für die Patrone in der Toleranzrechnung. Ebenheit und Rauheit der Rückfläche sowie die Allgemeintoleranz
+ISO 2768-mK sind für die Fertigung festgelegt und nicht gesondert nachgerechnet.
+
+![Zeichnung Patrone](zeichnungen/Patrone_7075_Zeichnung.png)
+
 ## Begriffe
 
 | Begriff | Bedeutung |
