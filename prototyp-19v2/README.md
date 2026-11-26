@@ -19,6 +19,49 @@ mit teils angenommenen Kaufteildaten; an echten Teilen ist davon noch nichts bes
 *Ablage mit vier Plätzen und Bürstenstation rechts, schräg von vorn (CAD, Stand 11.11.2026 – Einzelheiten der Patronen haben
 sich seitdem geändert).*
 
+## Ansichten
+
+Alle Bilder in diesem Abschnitt stammen aus dem CAD-Modell in `cad/` (Stand 22.11.2026). Begrenzungskörper des Druckers
+(Tür, Glas, Bett, Bauraumgrenzen) sind ausgeblendet.
+
+### Gesamtansicht
+
+![Gesamtansicht von vorn](bilder/p19v2_gesamt_vorn.png)
+
+*Von vorn (Türseite), schräg von oben: Ablage an der Wandschiene mit drei geparkten Patronen und der Bürstenstation rechts,
+dahinter der Kopf mit der vierten Patrone. Der rote Teil am rechten Platz ist der Adapter für das Original-Hotend des K2 Plus.*
+
+![Gesamtansicht von hinten](bilder/p19v2_gesamt_hinten.png)
+
+*Von hinten, schräg von oben: Kopf mit Kopfplatine vor der Ablage; darüber die Strangführung für die Filamentschläuche.*
+
+### Kopf
+
+Für die Kopfansichten sind Ablage und Strangführung ausgeblendet; am Kopf sitzt eine Patrone.
+
+![Kopf mit Patrone von vorn](bilder/p19v2_kopf_vorn.png)
+
+*Kopf mit verriegelter Patrone, schräg von vorn: Patrone mit Hotend unten, seitlich die beiden Hubmagnete des Riegels,
+oben der Filamenteinlauf, hinten die Kopfplatine.*
+
+![Kopf mit Patrone von der Seite](bilder/p19v2_kopf_seite.png)
+
+*Seitenansicht: links (hinten) die Kopfplatine mit den Leitungen, in der Mitte Kopfrahmen und Koppelplatte, rechts (vorn)
+die Patrone mit dem Heizblock unten.*
+
+![Kopf mit Patrone von hinten unten](bilder/p19v2_kopf_hinten_unten.png)
+
+*Schräg von hinten unten: Kopfplatine mit Steckern und verlegten Leitungen, darunter Düsenkanal und Bauteillüfter; ganz
+unten die Düse der Patrone.*
+
+### Patrone
+
+![Patrone von vorn](bilder/p19v2_patrone_vorn.png) ![Patrone von hinten](bilder/p19v2_patrone_hinten.png)
+
+*Einzelne Patrone (Aluminium 7075) mit Hotend, links schräg von vorn, rechts schräg von hinten. Vorn liegen in der Kabelnut
+die Adern des Patronenkabels (schwarz) und die daran verlöteten Hotend-Leitungen (rot), seitlich die Kühlrippen. Auf der
+Rückseite, die am Kopf anliegt, sitzen die beiden Druckscheiben für die Kugeln der 3-2-1-Kupplung.*
+
 ## Begriffe
 
 | Begriff | Bedeutung |
